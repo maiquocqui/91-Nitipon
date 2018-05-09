@@ -1,0 +1,61 @@
+header
+	background: $pink
+	.header-wrap
+		+pos(rel,null)
+		+flexbox
+		flex-wrap: wrap
+		justify-content: space-between
+	.sitelogo
+		+flexbox
+		justify-content: center
+		align-items: center
+		height: 100px
+		a
+			display: block
+		img
+			height: 70px
+	.col-right
+		+flexbox
+		align-items: center
+		align-content: center
+	.btn-showmenu
+		display: none
+	.overlay
+		display: none
+	.menu
+		ul.menu-link
+			+flexbox
+			li
+				a
+					+fs(17rem)
+					color: $white
+					line-height: 20px
+					padding: 10px 25px
+					text-transform: capitalize
+	.language
+	.search
+		margin-left: 30px
+		.search-toggle
+			color: $white
+			+fs(20rem)
+			line-height: 1
+			cursor: pointer
+			.lnr
+				display: block
+				line-height: 1
+		.search-wrap
+			display: none
+	.contact
+		a
+			display: block
+			line-height: 50px
+			color: $pink
+			background: $white
+			+bor-rad(5px)
+			padding: 0px 25px
+			margin-left: 30px
+			+fs(16rem)
+			font-weight: 500
+			text-transform: capitalize
+
+
