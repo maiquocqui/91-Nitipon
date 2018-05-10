@@ -39,7 +39,7 @@ gulp.task('concat-css', function() {
             "bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.css",
             "bower_components/hover/css/hover.css",
             "bower_components/animate.css/animate.css",
-            "bower_components/fontawesome/web-fonts-with-css/css/fontawesome-all.css",
+            "bower_components/font-awesome/css/font-awesome.css",
             "bower_components/linearicons/icon-font.min.css",
             "bower_components/slick-carousel/slick/slick.css",
             "bower_components/k-flex/dist/css/k-flex.css",

@@ -12,4 +12,14 @@ $(document).ready(function () {
         dots: true,
         fade: true
     });
+
+    // Staff slide
+    $('.staff-slide').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: true
+        // autoplay: true,
+        // autoplaySpeed: 5000,
+    });
 });
