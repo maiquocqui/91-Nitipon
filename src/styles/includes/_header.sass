@@ -1,37 +1,92 @@
 header
 	background: $pink
+	+media-breakpoint-down(lg)
+		height: 60px
+	.container
+		+media-breakpoint-down(lg)
+			max-width: 100%
+			width: 100%
 	.header-wrap
 		+pos(rel,null)
 		+flexbox
 		flex-wrap: wrap
 		justify-content: space-between
+		+media-breakpoint-down(lg)
+			justify-content: flex-start
 	.sitelogo
 		+flexbox
 		justify-content: center
 		align-items: center
 		height: 100px
+		+media-breakpoint-down(lg)
+			height: 60px
 		a
 			display: block
 		img
 			height: 70px
+			+media-breakpoint-down(lg)
+				height: 50px
 	.col-right
 		+flexbox
 		align-items: center
 		align-content: center
+		+media-breakpoint-down(lg)
+			flex: auto
+			justify-content: flex-end
 	.btn-showmenu
 		display: none
+		+media-breakpoint-down(lg)
+			+flexbox
+			justify-content: center
+			align-items: center
+			align-content: center
+			width: 40px
+			height: 40px
+			+bor-rad(3px)
+			border: 1px solid color-rgba($white,0.3)
+			+fs(18rem)
+			color: $white
+			margin: 10px 15px 10px 0px
 	.overlay
 		display: none
+		+pos(fix, 0 null 0 0)
+		right: 0
+		z-index: 800
+		background: $black
+		opacity: 0.7
 	.menu
+		+media-breakpoint-down(lg)
+			+pos(fix, 0 null 0 0)
+			width: 280px
+			background: $white
+			z-index: 1000
+			+transition(all,0.5s)
+			+transform(translateX(-100%))
+			&.open
+				+transform(translateX(0))
+		.menu-logo
+			display: none
+			+media-breakpoint-down(lg)
+				display: block
 		ul.menu-link
 			+flexbox
+			+media-breakpoint-down(lg)
+				flex-wrap: wrap
 			li
+				+media-breakpoint-down(lg)
+					width: 100%
+					border-bottom: 1px dashed darken($white,10%)
 				a
+					display: block
 					+fs(17rem)
 					color: $white
 					line-height: 20px
 					padding: 10px 25px
 					text-transform: capitalize
+					+media-breakpoint-down(lg)
+						color: $main
+						padding: 15px 30px
+						+fs(18rem)
 	.language
 	.search
 		margin-left: 30px
@@ -57,5 +112,10 @@ header
 			+fs(16rem)
 			font-weight: 500
 			text-transform: capitalize
+			+media-breakpoint-down(lg)
+				background: $pink
+				color: $white
+				margin: 15px 30px
+				text-align: center
 
 

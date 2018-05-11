@@ -1,4 +1,23 @@
 $(document).ready(function() {
+    // header script
+    $('header').scrollToFixed({
+        zIndex: 1000,
+    });
+
+    if ($(window).width() < 1200) {
+        $('header .menu').insertAfter('header .col-right');
+        $('header .contact').insertAfter('.menu .menu-wrap');
+    }
+
+    $('.btn-showmenu').click(function() {
+        $('.menu').addClass('open');
+        $('.overlay').fadeIn(500);
+    })
+    $('.overlay').click(function() {
+        $(this).fadeOut(500);
+        $('.menu').removeClass('open');
+    })
+
     // BANNER
     $('.banner').slick({
         slidesToShow: 1,
@@ -19,5 +38,18 @@ $(document).ready(function() {
         dots: true,
         // autoplay: true,
         // autoplaySpeed: 5000,
+    });
+
+    // SERVICE TOGGLE
+    $('.feature .feature-name').click(function() {
+        if ($(this).parent().hasClass('active') == true) {
+            $(this).parent().removeClass('active')
+            $(this).parent().find('.feature-des').slideUp(500);
+        } else {
+            $('.feature').removeClass('active');
+            $('.feature').find('.feature-des').slideUp(500);
+            $(this).parent().addClass('active')
+            $(this).parent().find('.feature-des').slideDown(500);
+        }
     });
 });

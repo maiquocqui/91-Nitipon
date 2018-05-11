@@ -1,0 +1,119 @@
+.knowledge-page
+	padding: 40px 0
+	.knowledge-content
+		+fs(18rem)
+		margin-bottom: 40px
+		+media-breakpoint-down(sm)
+			+fs(16rem)
+	.post-list
+		.post
+			&:nth-child(odd)
+				+media-breakpoint-up(md)
+					figure
+						.post-img
+							order: 2
+						figcaption
+							order: 1
+							&:before
+								content: '\f104'
+								left: unset
+								right: -18px
+			figure
+				height: 325px
+				+media-breakpoint-down(lg)
+					height: 300px
+				+media-breakpoint-down(sm)
+					height: 600px
+				+flexbox
+				flex-wrap: wrap
+				.post-img
+					width: 50%
+					flex: 1 0 50%
+					+media-breakpoint-down(sm)
+						width: 100%
+						flex: 0 0 100%
+						height: 300px
+					img
+						width: 100%
+						height: 100%
+						object-fit: cover
+				figcaption
+					width: 50%
+					flex: 1 0 50%
+					padding: 40px
+					background: darken($white,2%)
+					text-align: center
+					+pos(rel,null)
+					+media-breakpoint-down(lg)
+						padding: 20px 30px
+					+media-breakpoint-down(sm)
+						width: 100%
+						flex: 0 0 100%
+						height: 300px
+						padding: 20px
+					&:before
+						content: '\f105'
+						width: 36px
+						height: 36px
+						line-height: 36px
+						text-align: center
+						+fs(24rem)
+						background: $pink
+						color: $white
+						+bor-rad(50px)
+						+pos(abs, 50% null null -18px)
+						+transform(translateY(-50%))
+						z-index: 3
+						+media-breakpoint-down(sm)
+							content: '\f107'
+							top: -18px
+							left: 50%
+							right: unset
+							+transform(translate(-50%,0))
+					.post-name
+						+fs(20rem)
+						font-weight: 500
+						margin-bottom: 25px
+						+media-breakpoint-down(lg)
+							+fs(16rem)
+						&:after
+							content: ''
+							display: block
+							width: 50px
+							height: 2px
+							background: $pink
+							margin: 15px auto 0
+					.post-des 
+						+fs(16rem)
+						color: darken($white,40%)
+						+media-breakpoint-down(lg)
+							+fs(14rem)
+			&.big
+				figure
+					height: 650px
+					+media-breakpoint-down(lg)
+						height: 600px
+					.post-img
+						width: 100%
+						flex: 0 0 100%
+						height: 325px
+						order: 1
+						+media-breakpoint-down(lg)
+							height: 300px
+					figcaption
+						width: 100%
+						flex: 0 0 100%
+						height: 325px
+						order: 2
+						padding: 40px 80px
+						+media-breakpoint-down(lg)
+							padding: 20px 60px
+							height: 300px
+						+media-breakpoint-down(sm)
+							padding: 20px
+						&:before
+							content: '\f107'
+							top: -18px
+							left: 50%
+							right: unset
+							+transform(translate(-50%,0))

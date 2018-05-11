@@ -1,13 +1,92 @@
-.service-list
-	.service-col
-		display: block
-		figure
-			.service-img
-				img
-					width: 100%
-			figcaption
-				padding: 10px 0
-				.service-name
-					+fs(24rem)
+.service-sidebar
+	margin-bottom: 30px
+	.service-cate
+		ul
+			li
+				margin-bottom: 15px
+				a
+					+fs(15rem)
+					color: darken($white,40%)
+					&:hover
+						color: $pink
+				&.active
+					a
+						color: $pink
+.service-page
+	padding: 30px 0
+	.service-list
+		.service-col
+			margin-bottom: 30px
+			border: 1px solid $pink
+			+media-breakpoint-up(md)
+				&:nth-child(even)
+					figure
+						text-align: right
+						.service-img
+							order: 2
+						figcaption
+							order: 1
+			figure
+				+flexbox
+				flex-wrap: wrap
+				.service-img
+					width: 40%
+					+media-breakpoint-down(sm)
+						width: 100%
+						order: 1
+					img
+						width: 100%
+				figcaption
+					width: 60%
+					padding: 40px 60px
+					+media-breakpoint-down(sm)
+						width: 100%
+						order: 2
+					.service-name
+						+fs(22rem)
+						font-weight: 500
+						text-transform: uppercase
+						margin-bottom: 10px
+						color: $pink
+					.service-des
+						+fs(18rem)
+						margin-bottom: 20px
+					.service-link
+						a
+							display: inline-block
+							line-height: 50px
+							padding: 0px 50px
+							background: $pink
+							color: $white
+	.service-picture
+		text-align: center
+		margin-bottom: 30px
+	.service-feature
+		.feature
+			margin-bottom: 20px
+			.feature-name
+				+fs(18rem)
+				line-height: 20px
+				padding: 15px 30px
+				color: $main
+				font-weight: 500
+				background: #fdf8fb
+				+pos(rel,null)
+				cursor: pointer
+				&:after
+					content: '+'
+					+pos(abs, 15px 30px null null)
+			.feature-des
+				display: none
+				padding: 30px
+				.content
+					+fs(18rem)
+			&:first-child
+				.feature-des
+					display: block
+			&.active
+				.feature-name
 					color: $pink
-					font-weight: 500
+					&:after
+						content: '-'
+				.feature-des

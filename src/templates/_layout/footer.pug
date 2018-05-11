@@ -1,4 +1,20 @@
 footer
+	#modalContact.modal.fade(tabindex='-1', role='dialog', aria-labelledby='modalContactLabel', aria-hidden='true')
+		.modal-dialog.modal-contact(role='document')
+			.modal-content
+				.modal-header
+					.close(data-dismiss='modal', aria-label='Close') <span class="lnr lnr-cross"></span>
+				.modal-body
+					.contact-title Liên hệ để biết thêm thông tin
+					.contact-info
+						ul
+							li <span class="lnr lnr-phone-handset"></span>
+								a(href="tel:1800 6194") 1800 6194
+							li <span class="lnr lnr-link"></span> E:
+								a(href="mailto:") info@nitiponclinic.vn
+								br
+								|F:
+								a(href="http://fb.com/NitiponClinicVietnam") fb.com/NitiponClinicVietnam
 	section.footer-top
 		.container
 			.row

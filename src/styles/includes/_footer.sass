@@ -2,15 +2,23 @@ footer
 	.footer-top
 		background: $pink
 		padding: 50px 0
+		+media-breakpoint-down(md)
+			padding: 40px 0
 		.sitelogo
 			+flexbox
 			justify-content: center
 			width: 290px
 			margin-bottom: 25px
+			+media-breakpoint-down(md)
+				width: 100%
+				img
+					height: 80px
 		.contact-info
 			+fs(18rem)
 			font-weight: 500
 			color: $white
+			+media-breakpoint-down(md)
+				text-align: center
 			li
 				margin-bottom: 5px
 			a
@@ -18,6 +26,9 @@ footer
 				&:hover
 					text-decoration: underline
 		.footer-col
+			+media-breakpoint-down(md)
+				text-align: center
+				margin-bottom: 30px
 			.footer-title
 				+fs(20rem)
 				color: $white
@@ -33,15 +44,23 @@ footer
 						content: '#'
 			.footer-staff
 				+flexbox
+				+media-breakpoint-down(md)
+					justify-content: center
 				a
 					display: block
 					width: 120px
 					margin-right: 30px
+					+media-breakpoint-down(md)
+						margin-right: 0
+						+ a
+							margin-left: 20px
 					img
 						width: 120px
 			.social
 				+flexbox
 				margin-top: 20px
+				+media-breakpoint-down(md)
+					justify-content: center
 				a
 					+flexbox
 					justify-content: center
@@ -59,10 +78,17 @@ footer
 		.footer-wrap
 			+flexbox
 			justify-content: space-between
+			+media-breakpoint-down(md)
+				flex-wrap: wrap
+				text-align: center
 		.copyright
 			+fs(16rem)
 			color: darken($white,60%)
+			+media-breakpoint-down(md)
+				width: 100%
 		.footer-nav
+			+media-breakpoint-down(md)
+				width: 100%
 			a
 				color: darken($white,60%)
 				+fs(16rem)
