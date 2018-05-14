@@ -100,7 +100,7 @@ gulp.task('fonts', function() {
 
 // Task copy img
 gulp.task('img', function() {
-    return gulp.src('src/img/**/*')
+    gulp.src('src/img/**/*')
         .pipe(gulp.dest('./dist/img'))
 });
 
@@ -126,7 +126,7 @@ gulp.task('watch', function() {
     gulp.watch('src/templates/**/*.pug', ['pug']);
     gulp.watch('src/scripts/**/*.js', ['js']);
     gulp.watch('src/fonts/**/*', ['fonts']);
-    gulp.watch('src/img/**/*', ['img']).on('change', browserSync.reload);
+    gulp.watch('src/img/**/*', ['img']);
     gulp.watch('dist/*.html').on('change', browserSync.reload);
 }).on('end', browserSync.reload);
 

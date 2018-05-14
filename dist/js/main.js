@@ -42,6 +42,24 @@ $(document).ready(function () {
         // autoplaySpeed: 5000,
     });
 
+    // Product slide
+    $('.product-slide').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        fade: true,
+        asNavFor: '.product-nav'
+    });
+    $('.product-nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.product-slide',
+        dots: false,
+        arrows: false,
+        focusOnSelect: true
+    });
+
     // SERVICE TOGGLE
     $('.feature .feature-name').click(function () {
         if ($(this).parent().hasClass('active') == true) {

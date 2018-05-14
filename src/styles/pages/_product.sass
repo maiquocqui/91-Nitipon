@@ -1,0 +1,126 @@
+.product-page
+	padding: 30px 0
+	.product-list
+		margin-bottom: 30px
+		.product-col
+			display: block
+			figure
+				.product-img
+					+flexbox
+					justify-content: center
+					align-items: center
+					height: 210px
+				figcaption
+					padding: 10px 0
+					text-align: center
+					.product-name
+						+fs(18rem)
+						color: $pink
+	
+.product-slide-wrap
+	margin-bottom: 40px
+	.product-slide
+		margin-bottom: 20px
+		.item
+			.img
+				+flexbox
+				height: 410px
+				justify-content: center
+				align-items: center
+				align-content: center
+	.product-nav
+		.slick-track
+			margin: 0
+		.slick-list
+			margin: 0px -10px
+		.item
+			margin: 0px 10px
+			.img
+				height: 140px
+				border: 1px solid transparent
+				+flexbox
+				justify-content: center
+				align-items: center
+				img
+					max-width: 70%
+					max-height: 70%
+			&.slick-current
+				.img
+					border: 1px solid $pink
+.product-info
+	margin-bottom: 40px
+	.product-name
+		+fs(30rem)
+		font-weight: 700
+		margin-bottom: 20px
+	.product-overview
+		+fs(18rem)
+		margin-bottom: 40px
+	.product-order
+		+flexbox
+		align-items: center
+		align-content: center
+		margin-bottom: 40px
+		.btn-buy
+			display: block
+			background: $pink
+			color: $white
+			line-height: 50px
+			padding: 0px 50px
+			margin-right: 30px
+		.input-number
+			border: none
+			width: auto
+			+flexbox
+			align-items: center
+			align-content: center
+			&:after
+				display: none
+			.btn-spin
+				width: 50px
+				+fs(28rem)
+				color: $pink
+				font-weight: 700
+				text-align: center
+			input
+				width: 50px
+				height: 50px
+				line-height: 48px
+				text-align: center
+				border: 1px solid darken($white,10%)
+				color: $main
+	.share
+		a
+			width: 40px
+			height: 40px
+			color: $white
+			+fs(18rem)
+			line-height: 40px
+			text-align: center
+			+bor-rad(50px)
+			margin-right: 10px
+			&.fa-facebook
+				background: $facebook
+			&.fa-google-plus
+				background: $google
+			&.fa-twitter
+				background: $twitter
+
+.service-other
+	margin-bottom: 60px
+
+.pages
+	ul.pagination
+		justify-content: center
+		li
+			a, span
+				display: block
+				+fs(16rem)
+				width: 36px
+				height: 36px
+				text-align: center
+				line-height: 36px
+				border: 1px solid transparent
+			&.active
+				a, span
+					border: 1px solid darken($white,10%)
