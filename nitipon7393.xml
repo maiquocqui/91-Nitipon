@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FileZilla3 version="3.33.0" platform="windows">
+	<Servers>
+		<Server>
+			<Host>171.244.22.68</Host>
+			<Port>21</Port>
+			<Protocol>0</Protocol>
+			<Type>0</Type>
+			<User>Hiep_7393</User>
+			<Pass encoding="base64">QVNEQCM0MjM0U3NmZHM=</Pass>
+			<Account>Hiep_7393</Account>
+			<Logontype>4</Logontype>
+			<TimezoneOffset>0</TimezoneOffset>
+			<PasvMode>MODE_ACTIVE</PasvMode>
+			<MaximumMultipleConnections>0</MaximumMultipleConnections>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+			<Name>Nitipon7393</Name>
+			<Comments>Hiep_7393
+ASD@#4234Ssfds</Comments>
+			<Colour>0</Colour>
+			<LocalDir />
+			<RemoteDir />
+			<SyncBrowsing>0</SyncBrowsing>
+			<DirectoryComparison>0</DirectoryComparison>
+		</Server>
+	</Servers>
+</FileZilla3>
