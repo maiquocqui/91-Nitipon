@@ -16,6 +16,35 @@
 		+fs(18rem)
 		font-weight: 500
 		margin-bottom: 40px
+	.service-list
+		.slick-prev, .slick-next
+			+pos(abs, 50% null null null)
+			z-index: 1
+			+transform(translateY(-50%))
+			+fs(0)
+			width: 40px
+			height: 40px
+			line-height: 40px
+			text-align: center
+			background: color-rgba($white,0.3)
+			&:before
+				content: ''
+				+fs(18rem)
+			&:hover
+				background: color-rgba($white,0.8)
+		.slick-prev
+			left: 0
+			&:before
+				content: '\f104'
+		.slick-next
+			right: 0
+			&:before
+				content: '\f105'
+		.slick-list
+			margin: 0px -15px
+		.item
+			padding: 0px 15px
+
 .service-list
 	.service-col
 		display: block
@@ -102,6 +131,11 @@
 					justify-content: center
 					align-items: center
 					height: 210px
+					overflow: hidden
+					img
+						max-width: 80%
+						max-height: 80%
+						+transition(all,0.5s)
 				figcaption
 					padding: 10px 0
 					text-align: center
@@ -109,6 +143,10 @@
 						+fs(18rem)
 						font-weight: 500
 						color: $pink
+				&:hover
+					.product-img
+						img
+							+transform(scale3d(1.2,1.2,1))
 .home-brand
 	@extend .home-section
 .brand-list
