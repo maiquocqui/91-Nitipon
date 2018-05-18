@@ -9,7 +9,12 @@
 					+flexbox
 					justify-content: center
 					align-items: center
-					height: 210px
+					height: 250px
+					overflow: hidden
+					img
+						max-width: 80%
+						max-height: 80%
+						+transition(all,0.5s)
 				figcaption
 					padding: 10px 0
 					text-align: center
@@ -68,6 +73,8 @@
 			line-height: 50px
 			padding: 0px 50px
 			margin-right: 30px
+			+media-breakpoint-down(sm)
+				padding: 0px 30px
 		.input-number
 			border: none
 			width: auto
@@ -89,27 +96,59 @@
 				text-align: center
 				border: 1px solid darken($white,10%)
 				color: $main
-	.share
-		a
-			width: 40px
-			height: 40px
-			color: $white
-			+fs(18rem)
-			line-height: 40px
-			text-align: center
-			+bor-rad(50px)
-			margin-right: 10px
-			&.fa-facebook
-				background: $facebook
-			&.fa-google-plus
-				background: $google
-			&.fa-twitter
-				background: $twitter
+.share
+	+flexbox
+	align-items: center
+	a
+		display: block
+		width: 40px !important
+		height: 40px
+		color: $white
+		+fs(18rem)
+		line-height: 40px
+		text-align: center
+		+bor-rad(50px)
+		margin-right: 10px
+		&.fa-facebook, &.facebook
+			background: $facebook
+		&.fa-google-plus, &.google
+			background: $google
+		&.fa-twitter, &.twitter
+			background: $twitter
 
 .service-other
 	margin-bottom: 60px
+	.service-list
+		.slick-prev, .slick-next
+			+pos(abs, 50% null null null)
+			z-index: 1
+			+transform(translateY(-50%))
+			+fs(0)
+			width: 40px
+			height: 40px
+			line-height: 40px
+			text-align: center
+			background: color-rgba($white,0.3)
+			&:before
+				content: ''
+				+fs(18rem)
+			&:hover
+				background: color-rgba($white,0.8)
+		.slick-prev
+			left: 0
+			&:before
+				content: '\f104'
+		.slick-next
+			right: 0
+			&:before
+				content: '\f105'
+		.slick-list
+			margin: 0px -15px
+		.item
+			padding: 0px 15px
 
 .pages
+	margin: -30px 0px 30px
 	ul.pagination
 		justify-content: center
 		li
@@ -124,3 +163,7 @@
 			&.active
 				a, span
 					border: 1px solid darken($white,10%)
+
+.product-detail-page
+	.pages
+		display: none

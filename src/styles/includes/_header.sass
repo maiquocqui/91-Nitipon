@@ -72,13 +72,13 @@ header
 			+flexbox
 			+media-breakpoint-down(lg)
 				flex-wrap: wrap
-			li
+			> li
 				padding: 0px 25px
 				+media-breakpoint-down(lg)
 					width: 100%
 					padding: 0px
 					border-bottom: 1px dashed darken($white,10%)
-				a
+				> a
 					display: block
 					+fs(17rem)
 					color: $white
@@ -89,8 +89,35 @@ header
 						color: $main
 						padding: 15px 30px
 						+fs(18rem)
+				&.has-sub
+					+pos(rel,null)
+					.sub
+						+pos(abs, 100% null null 0)
+						min-width: 250px
+						padding: 10px 0
+						+bor-rad(5px)
+						overflow: hidden
+						box-shadow: 0px 5px 10px color-rgba($black,0.1)
+						z-index: 3
+						background: $white
+						display: none
+						ul
+							li
+								a
+									display: block
+									line-height: 20px
+									padding: 10px 20px
+									+fs(16rem)
+									color: darken($white,60%)
+								&:hover
+									a
+										color: $white
+										background: $pink
+				&:hover
+					.sub
+						display: block
 				&.active
-					a
+					> a
 						border-bottom: 1px solid $white
 	.language
 	.search

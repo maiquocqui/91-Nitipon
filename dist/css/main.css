@@ -1249,7 +1249,7 @@ pre {
   .table-responsive > .table-bordered {
     border: 0; }
 
-.form-control, .promotion-register .form-group input, .promotion-register .form-group select {
+.form-control, .modal .modal-dialog.modal-order .order-form .form-group input, .modal .modal-dialog.modal-order .order-form .form-group select, .modal .modal-dialog.modal-order .order-form .form-group textarea, .promotion-register .form-group input, .promotion-register .form-group select {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
@@ -1262,28 +1262,28 @@ pre {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media screen and (prefers-reduced-motion: reduce) {
-    .form-control, .promotion-register .form-group input, .promotion-register .form-group select {
+    .form-control, .modal .modal-dialog.modal-order .order-form .form-group input, .modal .modal-dialog.modal-order .order-form .form-group select, .modal .modal-dialog.modal-order .order-form .form-group textarea, .promotion-register .form-group input, .promotion-register .form-group select {
       transition: none; } }
-  .form-control::-ms-expand, .promotion-register .form-group input::-ms-expand, .promotion-register .form-group select::-ms-expand {
+  .form-control::-ms-expand, .modal .modal-dialog.modal-order .order-form .form-group input::-ms-expand, .modal .modal-dialog.modal-order .order-form .form-group select::-ms-expand, .modal .modal-dialog.modal-order .order-form .form-group textarea::-ms-expand, .promotion-register .form-group input::-ms-expand, .promotion-register .form-group select::-ms-expand {
     background-color: transparent;
     border: 0; }
-  .form-control:focus, .promotion-register .form-group input:focus, .promotion-register .form-group select:focus {
+  .form-control:focus, .modal .modal-dialog.modal-order .order-form .form-group input:focus, .modal .modal-dialog.modal-order .order-form .form-group select:focus, .modal .modal-dialog.modal-order .order-form .form-group textarea:focus, .promotion-register .form-group input:focus, .promotion-register .form-group select:focus {
     color: #495057;
     background-color: #fff;
     border-color: #80bdff;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
-  .form-control::placeholder, .promotion-register .form-group input::placeholder, .promotion-register .form-group select::placeholder {
+  .form-control::placeholder, .modal .modal-dialog.modal-order .order-form .form-group input::placeholder, .modal .modal-dialog.modal-order .order-form .form-group select::placeholder, .modal .modal-dialog.modal-order .order-form .form-group textarea::placeholder, .promotion-register .form-group input::placeholder, .promotion-register .form-group select::placeholder {
     color: #6c757d;
     opacity: 1; }
-  .form-control:disabled, .promotion-register .form-group input:disabled, .promotion-register .form-group select:disabled, .form-control[readonly], .promotion-register .form-group input[readonly], .promotion-register .form-group select[readonly] {
+  .form-control:disabled, .modal .modal-dialog.modal-order .order-form .form-group input:disabled, .modal .modal-dialog.modal-order .order-form .form-group select:disabled, .modal .modal-dialog.modal-order .order-form .form-group textarea:disabled, .promotion-register .form-group input:disabled, .promotion-register .form-group select:disabled, .form-control[readonly], .modal .modal-dialog.modal-order .order-form .form-group input[readonly], .modal .modal-dialog.modal-order .order-form .form-group select[readonly], .modal .modal-dialog.modal-order .order-form .form-group textarea[readonly], .promotion-register .form-group input[readonly], .promotion-register .form-group select[readonly] {
     background-color: #e9ecef;
     opacity: 1; }
 
-select.form-control:not([size]):not([multiple]), .promotion-register .form-group select:not([size]):not([multiple]) {
+select.form-control:not([size]):not([multiple]), .modal .modal-dialog.modal-order .order-form .form-group select:not([size]):not([multiple]), .promotion-register .form-group select:not([size]):not([multiple]) {
   height: calc(2.25rem + 2px); }
 
-select.form-control:focus::-ms-value, .promotion-register .form-group select:focus::-ms-value {
+select.form-control:focus::-ms-value, .modal .modal-dialog.modal-order .order-form .form-group select:focus::-ms-value, .promotion-register .form-group select:focus::-ms-value {
   color: #495057;
   background-color: #fff; }
 
@@ -1322,11 +1322,11 @@ select.form-control:focus::-ms-value, .promotion-register .form-group select:foc
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0; }
-  .form-control-plaintext.form-control-sm, .input-group-sm > .form-control-plaintext.form-control, .promotion-register .form-group .input-group-sm > input.form-control-plaintext, .promotion-register .form-group .input-group-sm > select.form-control-plaintext,
+  .form-control-plaintext.form-control-sm, .input-group-sm > .form-control-plaintext.form-control, .modal .modal-dialog.modal-order .order-form .form-group .input-group-sm > input.form-control-plaintext, .modal .modal-dialog.modal-order .order-form .form-group .input-group-sm > select.form-control-plaintext, .modal .modal-dialog.modal-order .order-form .form-group .input-group-sm > textarea.form-control-plaintext, .promotion-register .form-group .input-group-sm > input.form-control-plaintext, .promotion-register .form-group .input-group-sm > select.form-control-plaintext,
   .input-group-sm > .input-group-prepend > .form-control-plaintext.input-group-text,
   .input-group-sm > .input-group-append > .form-control-plaintext.input-group-text,
   .input-group-sm > .input-group-prepend > .form-control-plaintext.btn,
-  .input-group-sm > .input-group-append > .form-control-plaintext.btn, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control, .promotion-register .form-group .input-group-lg > input.form-control-plaintext, .promotion-register .form-group .input-group-lg > select.form-control-plaintext,
+  .input-group-sm > .input-group-append > .form-control-plaintext.btn, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control, .modal .modal-dialog.modal-order .order-form .form-group .input-group-lg > input.form-control-plaintext, .modal .modal-dialog.modal-order .order-form .form-group .input-group-lg > select.form-control-plaintext, .modal .modal-dialog.modal-order .order-form .form-group .input-group-lg > textarea.form-control-plaintext, .promotion-register .form-group .input-group-lg > input.form-control-plaintext, .promotion-register .form-group .input-group-lg > select.form-control-plaintext,
   .input-group-lg > .input-group-prepend > .form-control-plaintext.input-group-text,
   .input-group-lg > .input-group-append > .form-control-plaintext.input-group-text,
   .input-group-lg > .input-group-prepend > .form-control-plaintext.btn,
@@ -1334,7 +1334,7 @@ select.form-control:focus::-ms-value, .promotion-register .form-group select:foc
     padding-right: 0;
     padding-left: 0; }
 
-.form-control-sm, .input-group-sm > .form-control, .promotion-register .form-group .input-group-sm > input, .promotion-register .form-group .input-group-sm > select,
+.form-control-sm, .input-group-sm > .form-control, .modal .modal-dialog.modal-order .order-form .form-group .input-group-sm > input, .modal .modal-dialog.modal-order .order-form .form-group .input-group-sm > select, .modal .modal-dialog.modal-order .order-form .form-group .input-group-sm > textarea, .promotion-register .form-group .input-group-sm > input, .promotion-register .form-group .input-group-sm > select,
 .input-group-sm > .input-group-prepend > .input-group-text,
 .input-group-sm > .input-group-append > .input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
@@ -1344,14 +1344,14 @@ select.form-control:focus::-ms-value, .promotion-register .form-group select:foc
   line-height: 1.5;
   border-radius: 0.2rem; }
 
-select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]), .promotion-register .form-group .input-group-sm > select:not([size]):not([multiple]),
+select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]), .modal .modal-dialog.modal-order .order-form .form-group .input-group-sm > select:not([size]):not([multiple]), .promotion-register .form-group .input-group-sm > select:not([size]):not([multiple]),
 .input-group-sm > .input-group-prepend > select.input-group-text:not([size]):not([multiple]),
 .input-group-sm > .input-group-append > select.input-group-text:not([size]):not([multiple]),
 .input-group-sm > .input-group-prepend > select.btn:not([size]):not([multiple]),
 .input-group-sm > .input-group-append > select.btn:not([size]):not([multiple]) {
   height: calc(1.8125rem + 2px); }
 
-.form-control-lg, .input-group-lg > .form-control, .promotion-register .form-group .input-group-lg > input, .promotion-register .form-group .input-group-lg > select,
+.form-control-lg, .input-group-lg > .form-control, .modal .modal-dialog.modal-order .order-form .form-group .input-group-lg > input, .modal .modal-dialog.modal-order .order-form .form-group .input-group-lg > select, .modal .modal-dialog.modal-order .order-form .form-group .input-group-lg > textarea, .promotion-register .form-group .input-group-lg > input, .promotion-register .form-group .input-group-lg > select,
 .input-group-lg > .input-group-prepend > .input-group-text,
 .input-group-lg > .input-group-append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
@@ -1361,7 +1361,7 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
   line-height: 1.5;
   border-radius: 0.3rem; }
 
-select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]), .promotion-register .form-group .input-group-lg > select:not([size]):not([multiple]),
+select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]), .modal .modal-dialog.modal-order .order-form .form-group .input-group-lg > select:not([size]):not([multiple]), .promotion-register .form-group .input-group-lg > select:not([size]):not([multiple]),
 .input-group-lg > .input-group-prepend > select.input-group-text:not([size]):not([multiple]),
 .input-group-lg > .input-group-append > select.input-group-text:not([size]):not([multiple]),
 .input-group-lg > .input-group-prepend > select.btn:not([size]):not([multiple]),
@@ -1432,22 +1432,31 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   background-color: rgba(40, 167, 69, 0.8);
   border-radius: .2rem; }
 
-.was-validated .form-control:valid, .was-validated .promotion-register .form-group input:valid, .promotion-register .form-group .was-validated input:valid, .was-validated .promotion-register .form-group select:valid, .promotion-register .form-group .was-validated select:valid, .form-control.is-valid, .promotion-register .form-group input.is-valid, .promotion-register .form-group select.is-valid, .was-validated
+.was-validated .form-control:valid, .was-validated .modal .modal-dialog.modal-order .order-form .form-group input:valid, .modal .modal-dialog.modal-order .order-form .form-group .was-validated input:valid, .was-validated .modal .modal-dialog.modal-order .order-form .form-group select:valid, .modal .modal-dialog.modal-order .order-form .form-group .was-validated select:valid, .was-validated .modal .modal-dialog.modal-order .order-form .form-group textarea:valid, .modal .modal-dialog.modal-order .order-form .form-group .was-validated textarea:valid, .was-validated .promotion-register .form-group input:valid, .promotion-register .form-group .was-validated input:valid, .was-validated .promotion-register .form-group select:valid, .promotion-register .form-group .was-validated select:valid, .form-control.is-valid, .modal .modal-dialog.modal-order .order-form .form-group input.is-valid, .modal .modal-dialog.modal-order .order-form .form-group select.is-valid, .modal .modal-dialog.modal-order .order-form .form-group textarea.is-valid, .promotion-register .form-group input.is-valid, .promotion-register .form-group select.is-valid, .was-validated
 .custom-select:valid,
 .custom-select.is-valid {
   border-color: #28a745; }
-  .was-validated .form-control:valid:focus, .was-validated .promotion-register .form-group input:valid:focus, .promotion-register .form-group .was-validated input:valid:focus, .was-validated .promotion-register .form-group select:valid:focus, .promotion-register .form-group .was-validated select:valid:focus, .form-control.is-valid:focus, .promotion-register .form-group input.is-valid:focus, .promotion-register .form-group select.is-valid:focus, .was-validated
+  .was-validated .form-control:valid:focus, .was-validated .modal .modal-dialog.modal-order .order-form .form-group input:valid:focus, .modal .modal-dialog.modal-order .order-form .form-group .was-validated input:valid:focus, .was-validated .modal .modal-dialog.modal-order .order-form .form-group select:valid:focus, .modal .modal-dialog.modal-order .order-form .form-group .was-validated select:valid:focus, .was-validated .modal .modal-dialog.modal-order .order-form .form-group textarea:valid:focus, .modal .modal-dialog.modal-order .order-form .form-group .was-validated textarea:valid:focus, .was-validated .promotion-register .form-group input:valid:focus, .promotion-register .form-group .was-validated input:valid:focus, .was-validated .promotion-register .form-group select:valid:focus, .promotion-register .form-group .was-validated select:valid:focus, .form-control.is-valid:focus, .modal .modal-dialog.modal-order .order-form .form-group input.is-valid:focus, .modal .modal-dialog.modal-order .order-form .form-group select.is-valid:focus, .modal .modal-dialog.modal-order .order-form .form-group textarea.is-valid:focus, .promotion-register .form-group input.is-valid:focus, .promotion-register .form-group select.is-valid:focus, .was-validated
   .custom-select:valid:focus,
   .custom-select.is-valid:focus {
     border-color: #28a745;
     box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); }
-  .was-validated .form-control:valid ~ .valid-feedback, .was-validated .promotion-register .form-group input:valid ~ .valid-feedback, .promotion-register .form-group .was-validated input:valid ~ .valid-feedback, .was-validated .promotion-register .form-group select:valid ~ .valid-feedback, .promotion-register .form-group .was-validated select:valid ~ .valid-feedback,
+  .was-validated .form-control:valid ~ .valid-feedback, .was-validated .modal .modal-dialog.modal-order .order-form .form-group input:valid ~ .valid-feedback, .modal .modal-dialog.modal-order .order-form .form-group .was-validated input:valid ~ .valid-feedback, .was-validated .modal .modal-dialog.modal-order .order-form .form-group select:valid ~ .valid-feedback, .modal .modal-dialog.modal-order .order-form .form-group .was-validated select:valid ~ .valid-feedback, .was-validated .modal .modal-dialog.modal-order .order-form .form-group textarea:valid ~ .valid-feedback, .modal .modal-dialog.modal-order .order-form .form-group .was-validated textarea:valid ~ .valid-feedback, .was-validated .promotion-register .form-group input:valid ~ .valid-feedback, .promotion-register .form-group .was-validated input:valid ~ .valid-feedback, .was-validated .promotion-register .form-group select:valid ~ .valid-feedback, .promotion-register .form-group .was-validated select:valid ~ .valid-feedback,
   .was-validated .form-control:valid ~ .valid-tooltip,
+  .was-validated .modal .modal-dialog.modal-order .order-form .form-group input:valid ~ .valid-tooltip,
+  .modal .modal-dialog.modal-order .order-form .form-group .was-validated input:valid ~ .valid-tooltip,
+  .was-validated .modal .modal-dialog.modal-order .order-form .form-group select:valid ~ .valid-tooltip,
+  .modal .modal-dialog.modal-order .order-form .form-group .was-validated select:valid ~ .valid-tooltip,
+  .was-validated .modal .modal-dialog.modal-order .order-form .form-group textarea:valid ~ .valid-tooltip,
+  .modal .modal-dialog.modal-order .order-form .form-group .was-validated textarea:valid ~ .valid-tooltip,
   .was-validated .promotion-register .form-group input:valid ~ .valid-tooltip,
   .promotion-register .form-group .was-validated input:valid ~ .valid-tooltip,
   .was-validated .promotion-register .form-group select:valid ~ .valid-tooltip,
-  .promotion-register .form-group .was-validated select:valid ~ .valid-tooltip, .form-control.is-valid ~ .valid-feedback, .promotion-register .form-group input.is-valid ~ .valid-feedback, .promotion-register .form-group select.is-valid ~ .valid-feedback,
+  .promotion-register .form-group .was-validated select:valid ~ .valid-tooltip, .form-control.is-valid ~ .valid-feedback, .modal .modal-dialog.modal-order .order-form .form-group input.is-valid ~ .valid-feedback, .modal .modal-dialog.modal-order .order-form .form-group select.is-valid ~ .valid-feedback, .modal .modal-dialog.modal-order .order-form .form-group textarea.is-valid ~ .valid-feedback, .promotion-register .form-group input.is-valid ~ .valid-feedback, .promotion-register .form-group select.is-valid ~ .valid-feedback,
   .form-control.is-valid ~ .valid-tooltip,
+  .modal .modal-dialog.modal-order .order-form .form-group input.is-valid ~ .valid-tooltip,
+  .modal .modal-dialog.modal-order .order-form .form-group select.is-valid ~ .valid-tooltip,
+  .modal .modal-dialog.modal-order .order-form .form-group textarea.is-valid ~ .valid-tooltip,
   .promotion-register .form-group input.is-valid ~ .valid-tooltip,
   .promotion-register .form-group select.is-valid ~ .valid-tooltip, .was-validated
   .custom-select:valid ~ .valid-feedback,
@@ -1520,22 +1529,31 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   background-color: rgba(220, 53, 69, 0.8);
   border-radius: .2rem; }
 
-.was-validated .form-control:invalid, .was-validated .promotion-register .form-group input:invalid, .promotion-register .form-group .was-validated input:invalid, .was-validated .promotion-register .form-group select:invalid, .promotion-register .form-group .was-validated select:invalid, .form-control.is-invalid, .promotion-register .form-group input.is-invalid, .promotion-register .form-group select.is-invalid, .was-validated
+.was-validated .form-control:invalid, .was-validated .modal .modal-dialog.modal-order .order-form .form-group input:invalid, .modal .modal-dialog.modal-order .order-form .form-group .was-validated input:invalid, .was-validated .modal .modal-dialog.modal-order .order-form .form-group select:invalid, .modal .modal-dialog.modal-order .order-form .form-group .was-validated select:invalid, .was-validated .modal .modal-dialog.modal-order .order-form .form-group textarea:invalid, .modal .modal-dialog.modal-order .order-form .form-group .was-validated textarea:invalid, .was-validated .promotion-register .form-group input:invalid, .promotion-register .form-group .was-validated input:invalid, .was-validated .promotion-register .form-group select:invalid, .promotion-register .form-group .was-validated select:invalid, .form-control.is-invalid, .modal .modal-dialog.modal-order .order-form .form-group input.is-invalid, .modal .modal-dialog.modal-order .order-form .form-group select.is-invalid, .modal .modal-dialog.modal-order .order-form .form-group textarea.is-invalid, .promotion-register .form-group input.is-invalid, .promotion-register .form-group select.is-invalid, .was-validated
 .custom-select:invalid,
 .custom-select.is-invalid {
   border-color: #dc3545; }
-  .was-validated .form-control:invalid:focus, .was-validated .promotion-register .form-group input:invalid:focus, .promotion-register .form-group .was-validated input:invalid:focus, .was-validated .promotion-register .form-group select:invalid:focus, .promotion-register .form-group .was-validated select:invalid:focus, .form-control.is-invalid:focus, .promotion-register .form-group input.is-invalid:focus, .promotion-register .form-group select.is-invalid:focus, .was-validated
+  .was-validated .form-control:invalid:focus, .was-validated .modal .modal-dialog.modal-order .order-form .form-group input:invalid:focus, .modal .modal-dialog.modal-order .order-form .form-group .was-validated input:invalid:focus, .was-validated .modal .modal-dialog.modal-order .order-form .form-group select:invalid:focus, .modal .modal-dialog.modal-order .order-form .form-group .was-validated select:invalid:focus, .was-validated .modal .modal-dialog.modal-order .order-form .form-group textarea:invalid:focus, .modal .modal-dialog.modal-order .order-form .form-group .was-validated textarea:invalid:focus, .was-validated .promotion-register .form-group input:invalid:focus, .promotion-register .form-group .was-validated input:invalid:focus, .was-validated .promotion-register .form-group select:invalid:focus, .promotion-register .form-group .was-validated select:invalid:focus, .form-control.is-invalid:focus, .modal .modal-dialog.modal-order .order-form .form-group input.is-invalid:focus, .modal .modal-dialog.modal-order .order-form .form-group select.is-invalid:focus, .modal .modal-dialog.modal-order .order-form .form-group textarea.is-invalid:focus, .promotion-register .form-group input.is-invalid:focus, .promotion-register .form-group select.is-invalid:focus, .was-validated
   .custom-select:invalid:focus,
   .custom-select.is-invalid:focus {
     border-color: #dc3545;
     box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25); }
-  .was-validated .form-control:invalid ~ .invalid-feedback, .was-validated .promotion-register .form-group input:invalid ~ .invalid-feedback, .promotion-register .form-group .was-validated input:invalid ~ .invalid-feedback, .was-validated .promotion-register .form-group select:invalid ~ .invalid-feedback, .promotion-register .form-group .was-validated select:invalid ~ .invalid-feedback,
+  .was-validated .form-control:invalid ~ .invalid-feedback, .was-validated .modal .modal-dialog.modal-order .order-form .form-group input:invalid ~ .invalid-feedback, .modal .modal-dialog.modal-order .order-form .form-group .was-validated input:invalid ~ .invalid-feedback, .was-validated .modal .modal-dialog.modal-order .order-form .form-group select:invalid ~ .invalid-feedback, .modal .modal-dialog.modal-order .order-form .form-group .was-validated select:invalid ~ .invalid-feedback, .was-validated .modal .modal-dialog.modal-order .order-form .form-group textarea:invalid ~ .invalid-feedback, .modal .modal-dialog.modal-order .order-form .form-group .was-validated textarea:invalid ~ .invalid-feedback, .was-validated .promotion-register .form-group input:invalid ~ .invalid-feedback, .promotion-register .form-group .was-validated input:invalid ~ .invalid-feedback, .was-validated .promotion-register .form-group select:invalid ~ .invalid-feedback, .promotion-register .form-group .was-validated select:invalid ~ .invalid-feedback,
   .was-validated .form-control:invalid ~ .invalid-tooltip,
+  .was-validated .modal .modal-dialog.modal-order .order-form .form-group input:invalid ~ .invalid-tooltip,
+  .modal .modal-dialog.modal-order .order-form .form-group .was-validated input:invalid ~ .invalid-tooltip,
+  .was-validated .modal .modal-dialog.modal-order .order-form .form-group select:invalid ~ .invalid-tooltip,
+  .modal .modal-dialog.modal-order .order-form .form-group .was-validated select:invalid ~ .invalid-tooltip,
+  .was-validated .modal .modal-dialog.modal-order .order-form .form-group textarea:invalid ~ .invalid-tooltip,
+  .modal .modal-dialog.modal-order .order-form .form-group .was-validated textarea:invalid ~ .invalid-tooltip,
   .was-validated .promotion-register .form-group input:invalid ~ .invalid-tooltip,
   .promotion-register .form-group .was-validated input:invalid ~ .invalid-tooltip,
   .was-validated .promotion-register .form-group select:invalid ~ .invalid-tooltip,
-  .promotion-register .form-group .was-validated select:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback, .promotion-register .form-group input.is-invalid ~ .invalid-feedback, .promotion-register .form-group select.is-invalid ~ .invalid-feedback,
+  .promotion-register .form-group .was-validated select:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback, .modal .modal-dialog.modal-order .order-form .form-group input.is-invalid ~ .invalid-feedback, .modal .modal-dialog.modal-order .order-form .form-group select.is-invalid ~ .invalid-feedback, .modal .modal-dialog.modal-order .order-form .form-group textarea.is-invalid ~ .invalid-feedback, .promotion-register .form-group input.is-invalid ~ .invalid-feedback, .promotion-register .form-group select.is-invalid ~ .invalid-feedback,
   .form-control.is-invalid ~ .invalid-tooltip,
+  .modal .modal-dialog.modal-order .order-form .form-group input.is-invalid ~ .invalid-tooltip,
+  .modal .modal-dialog.modal-order .order-form .form-group select.is-invalid ~ .invalid-tooltip,
+  .modal .modal-dialog.modal-order .order-form .form-group textarea.is-invalid ~ .invalid-tooltip,
   .promotion-register .form-group input.is-invalid ~ .invalid-tooltip,
   .promotion-register .form-group select.is-invalid ~ .invalid-tooltip, .was-validated
   .custom-select:invalid ~ .invalid-feedback,
@@ -1605,7 +1623,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
       flex-flow: row wrap;
       align-items: center;
       margin-bottom: 0; }
-    .form-inline .form-control, .form-inline .promotion-register .form-group input, .promotion-register .form-group .form-inline input, .form-inline .promotion-register .form-group select, .promotion-register .form-group .form-inline select {
+    .form-inline .form-control, .form-inline .modal .modal-dialog.modal-order .order-form .form-group input, .modal .modal-dialog.modal-order .order-form .form-group .form-inline input, .form-inline .modal .modal-dialog.modal-order .order-form .form-group select, .modal .modal-dialog.modal-order .order-form .form-group .form-inline select, .form-inline .modal .modal-dialog.modal-order .order-form .form-group textarea, .modal .modal-dialog.modal-order .order-form .form-group .form-inline textarea, .form-inline .promotion-register .form-group input, .promotion-register .form-group .form-inline input, .form-inline .promotion-register .form-group select, .promotion-register .form-group .form-inline select {
       display: inline-block;
       width: auto;
       vertical-align: middle; }
@@ -2369,40 +2387,52 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: stretch;
   width: 100%; }
-  .input-group > .form-control, .promotion-register .form-group .input-group > input, .promotion-register .form-group .input-group > select,
+  .input-group > .form-control, .modal .modal-dialog.modal-order .order-form .form-group .input-group > input, .modal .modal-dialog.modal-order .order-form .form-group .input-group > select, .modal .modal-dialog.modal-order .order-form .form-group .input-group > textarea, .promotion-register .form-group .input-group > input, .promotion-register .form-group .input-group > select,
   .input-group > .custom-select,
   .input-group > .custom-file {
     position: relative;
     flex: 1 1 auto;
     width: 1%;
     margin-bottom: 0; }
-    .input-group > .form-control:focus, .promotion-register .form-group .input-group > input:focus, .promotion-register .form-group .input-group > select:focus,
+    .input-group > .form-control:focus, .modal .modal-dialog.modal-order .order-form .form-group .input-group > input:focus, .modal .modal-dialog.modal-order .order-form .form-group .input-group > select:focus, .modal .modal-dialog.modal-order .order-form .form-group .input-group > textarea:focus, .promotion-register .form-group .input-group > input:focus, .promotion-register .form-group .input-group > select:focus,
     .input-group > .custom-select:focus,
     .input-group > .custom-file:focus {
       z-index: 3; }
-    .input-group > .form-control + .form-control, .promotion-register .form-group .input-group > input + .form-control, .promotion-register .form-group .input-group > select + .form-control, .promotion-register .form-group .input-group > .form-control + input, .promotion-register .form-group .input-group > input + input, .promotion-register .form-group .input-group > select + input, .promotion-register .form-group .input-group > .form-control + select, .promotion-register .form-group .input-group > input + select, .promotion-register .form-group .input-group > select + select,
+    .input-group > .form-control + .form-control, .modal .modal-dialog.modal-order .order-form .form-group .input-group > input + .form-control, .modal .modal-dialog.modal-order .order-form .form-group .input-group > select + .form-control, .modal .modal-dialog.modal-order .order-form .form-group .input-group > textarea + .form-control, .promotion-register .form-group .input-group > input + .form-control, .promotion-register .form-group .input-group > select + .form-control, .modal .modal-dialog.modal-order .order-form .form-group .input-group > .form-control + input, .modal .modal-dialog.modal-order .order-form .form-group .input-group > input + input, .modal .modal-dialog.modal-order .order-form .form-group .input-group > select + input, .modal .modal-dialog.modal-order .order-form .form-group .input-group > textarea + input, .modal .modal-dialog.modal-order .order-form .form-group .input-group > .form-control + select, .modal .modal-dialog.modal-order .order-form .form-group .input-group > input + select, .modal .modal-dialog.modal-order .order-form .form-group .input-group > select + select, .modal .modal-dialog.modal-order .order-form .form-group .input-group > textarea + select, .modal .modal-dialog.modal-order .order-form .form-group .input-group > .form-control + textarea, .modal .modal-dialog.modal-order .order-form .form-group .input-group > input + textarea, .modal .modal-dialog.modal-order .order-form .form-group .input-group > select + textarea, .modal .modal-dialog.modal-order .order-form .form-group .input-group > textarea + textarea, .promotion-register .form-group .input-group > .form-control + input, .promotion-register .form-group .input-group > input + input, .promotion-register .form-group .input-group > select + input, .promotion-register .form-group .input-group > .form-control + select, .promotion-register .form-group .input-group > input + select, .promotion-register .form-group .input-group > select + select,
     .input-group > .form-control + .custom-select,
+    .modal .modal-dialog.modal-order .order-form .form-group .input-group > input + .custom-select,
+    .modal .modal-dialog.modal-order .order-form .form-group .input-group > select + .custom-select,
+    .modal .modal-dialog.modal-order .order-form .form-group .input-group > textarea + .custom-select,
     .promotion-register .form-group .input-group > input + .custom-select,
     .promotion-register .form-group .input-group > select + .custom-select,
     .input-group > .form-control + .custom-file,
+    .modal .modal-dialog.modal-order .order-form .form-group .input-group > input + .custom-file,
+    .modal .modal-dialog.modal-order .order-form .form-group .input-group > select + .custom-file,
+    .modal .modal-dialog.modal-order .order-form .form-group .input-group > textarea + .custom-file,
     .promotion-register .form-group .input-group > input + .custom-file,
     .promotion-register .form-group .input-group > select + .custom-file,
     .input-group > .custom-select + .form-control,
+    .modal .modal-dialog.modal-order .order-form .form-group .input-group > .custom-select + input,
+    .modal .modal-dialog.modal-order .order-form .form-group .input-group > .custom-select + select,
+    .modal .modal-dialog.modal-order .order-form .form-group .input-group > .custom-select + textarea,
     .promotion-register .form-group .input-group > .custom-select + input,
     .promotion-register .form-group .input-group > .custom-select + select,
     .input-group > .custom-select + .custom-select,
     .input-group > .custom-select + .custom-file,
     .input-group > .custom-file + .form-control,
+    .modal .modal-dialog.modal-order .order-form .form-group .input-group > .custom-file + input,
+    .modal .modal-dialog.modal-order .order-form .form-group .input-group > .custom-file + select,
+    .modal .modal-dialog.modal-order .order-form .form-group .input-group > .custom-file + textarea,
     .promotion-register .form-group .input-group > .custom-file + input,
     .promotion-register .form-group .input-group > .custom-file + select,
     .input-group > .custom-file + .custom-select,
     .input-group > .custom-file + .custom-file {
       margin-left: -1px; }
-  .input-group > .form-control:not(:last-child), .promotion-register .form-group .input-group > input:not(:last-child), .promotion-register .form-group .input-group > select:not(:last-child),
+  .input-group > .form-control:not(:last-child), .modal .modal-dialog.modal-order .order-form .form-group .input-group > input:not(:last-child), .modal .modal-dialog.modal-order .order-form .form-group .input-group > select:not(:last-child), .modal .modal-dialog.modal-order .order-form .form-group .input-group > textarea:not(:last-child), .promotion-register .form-group .input-group > input:not(:last-child), .promotion-register .form-group .input-group > select:not(:last-child),
   .input-group > .custom-select:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
-  .input-group > .form-control:not(:first-child), .promotion-register .form-group .input-group > input:not(:first-child), .promotion-register .form-group .input-group > select:not(:first-child),
+  .input-group > .form-control:not(:first-child), .modal .modal-dialog.modal-order .order-form .form-group .input-group > input:not(:first-child), .modal .modal-dialog.modal-order .order-form .form-group .input-group > select:not(:first-child), .modal .modal-dialog.modal-order .order-form .form-group .input-group > textarea:not(:first-child), .promotion-register .form-group .input-group > input:not(:first-child), .promotion-register .form-group .input-group > select:not(:first-child),
   .input-group > .custom-select:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0; }
@@ -6622,7 +6652,7 @@ main.big {
       padding: 0px 60px; } }
 
 .content {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   line-height: 1.8; }
   .content .row {
     margin: 0px -10px; }
@@ -7136,6 +7166,11 @@ img, iframe {
 
 .form-group {
   position: relative; }
+  .form-group .fa.fa-exclamation-triangle {
+    color: #ef3331;
+    font-family: 'inherit'; }
+    .form-group .fa.fa-exclamation-triangle:before {
+      font-family: 'fontawesome'; }
 
 .contact-form .form-group .fa.fa-exclamation-triangle {
   top: 50px;
@@ -7143,26 +7178,6 @@ img, iframe {
 
 .hidden {
   display: none; }
-
-.share {
-  text-align: left;
-  clear: both; }
-  .share.sc-right {
-    text-align: right; }
-  .share .face-like {
-    width: auto;
-    display: inline-block; }
-  .share > div, .share .face-like, .share .fb-share-button, .share .google {
-    display: inline-block;
-    margin-bottom: 5px;
-    margin-right: 5px;
-    vertical-align: top; }
-  .share .google, .share .tweet {
-    width: 60px; }
-  .share .fb-share-button.fb_iframe_widget iframe, .share iframe.twitter-share-button {
-    display: block; }
-  .share .google {
-    margin-top: -5px; }
 
 .searchresults .pagination {
   display: none; }
@@ -7380,6 +7395,9 @@ img, iframe {
   #map iframe.active {
     pointer-events: all; }
 
+input[type="reset"] {
+  display: none !important; }
+
 .bs-tooltip-left .arrow:before, .bs-tooltip-auto[x-placement^="left"] .arrow:before, .bs-tooltip-auto[x-placement^="left"] .arrow:before {
   border-left-color: #CDDC39; }
 
@@ -7509,10 +7527,72 @@ body.modal-open {
   .modal .modal-dialog {
     margin: 100px auto;
     max-width: 1000px; }
+    @media (max-width: 991.98px) {
+      .modal .modal-dialog {
+        margin: 60px auto; } }
+    @media (max-width: 575.98px) {
+      .modal .modal-dialog {
+        margin: 0px; } }
     .modal .modal-dialog .modal-content {
       border-radius: 0;
       border: none;
       box-shadow: none; }
+    .modal .modal-dialog.modal-order {
+      background: url(../img/product/bg.png) center center no-repeat;
+      background-size: cover;
+      max-width: 650px; }
+      .modal .modal-dialog.modal-order .modal-content {
+        background: none;
+        padding: 50px 0; }
+        .modal .modal-dialog.modal-order .modal-content .modal-header {
+          border: none;
+          padding: 0;
+          margin: 0; }
+          .modal .modal-dialog.modal-order .modal-content .modal-header .close {
+            color: #fff;
+            text-shadow: none;
+            opacity: 1;
+            line-height: 1;
+            position: absolute;
+            top: 30px;
+            right: 30px; }
+            .modal .modal-dialog.modal-order .modal-content .modal-header .close .lnr {
+              line-height: 1; }
+      .modal .modal-dialog.modal-order .order-form {
+        max-width: 450px;
+        margin: 0 auto; }
+        .modal .modal-dialog.modal-order .order-form .module-title {
+          color: #fff;
+          font-size: 1.125rem;
+          margin-bottom: 10px; }
+        .modal .modal-dialog.modal-order .order-form .form-group {
+          margin-bottom: 10px; }
+          .modal .modal-dialog.modal-order .order-form .form-group input, .modal .modal-dialog.modal-order .order-form .form-group select, .modal .modal-dialog.modal-order .order-form .form-group textarea {
+            padding: 1rem 1.3rem;
+            border-radius: 0;
+            border: none; }
+            .modal .modal-dialog.modal-order .order-form .form-group input:focus, .modal .modal-dialog.modal-order .order-form .form-group select:focus, .modal .modal-dialog.modal-order .order-form .form-group textarea:focus {
+              border-color: #e386aa;
+              box-shadow: 0 0 0 0.2rem rgba(208, 51, 112, 0.2); }
+          .modal .modal-dialog.modal-order .order-form .form-group select:not([size]):not([multiple]) {
+            height: calc(4.1rem + 2px); }
+        .modal .modal-dialog.modal-order .order-form .frm-btn {
+          text-align: center; }
+        .modal .modal-dialog.modal-order .order-form input[type="submit"] {
+          line-height: 50px;
+          text-transform: uppercase;
+          font-size: 1.125rem;
+          font-weight: 500;
+          color: #d03370;
+          background: #fff;
+          padding: 0px 50px;
+          border: none;
+          display: inline-block;
+          width: auto;
+          text-transform: capitalize; }
+          .modal .modal-dialog.modal-order .order-form input[type="submit"]:focus {
+            background: #fff;
+            color: #d03370; }
     .modal .modal-dialog.modal-contact {
       background: linear-gradient(#ea3f80, #b62560);
       min-width: 1040px; }
@@ -7709,14 +7789,14 @@ header {
     @media (max-width: 1199.98px) {
       header .menu ul.menu-link {
         flex-wrap: wrap; } }
-    header .menu ul.menu-link li {
+    header .menu ul.menu-link > li {
       padding: 0px 25px; }
       @media (max-width: 1199.98px) {
-        header .menu ul.menu-link li {
+        header .menu ul.menu-link > li {
           width: 100%;
           padding: 0px;
           border-bottom: 1px dashed #e6e6e6; } }
-      header .menu ul.menu-link li a {
+      header .menu ul.menu-link > li > a {
         display: block;
         font-size: 1.0625rem;
         color: #fff;
@@ -7724,11 +7804,36 @@ header {
         padding: 10px 0px;
         text-transform: capitalize; }
         @media (max-width: 1199.98px) {
-          header .menu ul.menu-link li a {
+          header .menu ul.menu-link > li > a {
             color: #333;
             padding: 15px 30px;
             font-size: 1.125rem; } }
-      header .menu ul.menu-link li.active a {
+      header .menu ul.menu-link > li.has-sub {
+        position: relative; }
+        header .menu ul.menu-link > li.has-sub .sub {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          min-width: 250px;
+          padding: 10px 0;
+          border-radius: 5px;
+          overflow: hidden;
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+          z-index: 3;
+          background: #fff;
+          display: none; }
+          header .menu ul.menu-link > li.has-sub .sub ul li a {
+            display: block;
+            line-height: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #666666; }
+          header .menu ul.menu-link > li.has-sub .sub ul li:hover a {
+            color: #fff;
+            background: #d03370; }
+      header .menu ul.menu-link > li:hover .sub {
+        display: block; }
+      header .menu ul.menu-link > li.active > a {
         border-bottom: 1px solid #fff; }
   header .search {
     margin-left: 30px;
@@ -8151,7 +8256,7 @@ footer .footer-bottom {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 210px;
+    height: 250px;
     overflow: hidden; }
     .home-product .product-list .product-col figure .product-img img {
       max-width: 80%;
@@ -8240,6 +8345,10 @@ footer .footer-bottom {
       margin-bottom: 50px; }
     .about-section .about-store .store {
       margin-top: 30px; }
+  .about-section .about-img {
+    margin-bottom: 30px; }
+  .about-section .hidden-content {
+    display: none; }
 
 .service-sidebar {
   margin-bottom: 30px; }
@@ -8376,7 +8485,12 @@ footer .footer-bottom {
     background: #d03370;
     padding: 0px 50px;
     border: none;
+    display: inline-block;
+    width: auto;
     text-transform: capitalize; }
+    .promotion-register input[type="submit"]:focus {
+      background: #d03370;
+      color: #fff; }
 
 .promotion-page {
   padding: 40px 0; }
@@ -8542,6 +8656,16 @@ footer .footer-bottom {
         -o-transform: translate(-50%, 0);
         transform: translate(-50%, 0); }
 
+.knowledgedetail-page .knowledgedetail-img {
+  margin-bottom: 40px; }
+
+.knowledgedetail-page .content {
+  max-width: 770px;
+  margin: 0 auto; }
+
+.knowledgedetail-page .share {
+  justify-content: center; }
+
 .product-page {
   padding: 30px 0; }
   .product-page .product-list {
@@ -8556,7 +8680,17 @@ footer .footer-bottom {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 210px; }
+        height: 250px;
+        overflow: hidden; }
+        .product-page .product-list .product-col figure .product-img img {
+          max-width: 80%;
+          max-height: 80%;
+          -webkit-transition: all, 0.5s;
+          -khtml-transition: all, 0.5s;
+          -moz-transition: all, 0.5s;
+          -ms-transition: all, 0.5s;
+          -o-transition: all, 0.5s;
+          transition: all, 0.5s; }
       .product-page .product-list .product-col figure figcaption {
         padding: 10px 0;
         text-align: center; }
@@ -8625,6 +8759,9 @@ footer .footer-bottom {
       line-height: 50px;
       padding: 0px 50px;
       margin-right: 30px; }
+      @media (max-width: 767.98px) {
+        .product-info .product-order .btn-buy {
+          padding: 0px 30px; } }
     .product-info .product-order .input-number {
       border: none;
       width: auto;
@@ -8650,8 +8787,17 @@ footer .footer-bottom {
         text-align: center;
         border: 1px solid #e6e6e6;
         color: #333; }
-  .product-info .share a {
-    width: 40px;
+
+.share {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center; }
+  .share a {
+    display: block;
+    width: 40px !important;
     height: 40px;
     color: #fff;
     font-size: 1.125rem;
@@ -8659,27 +8805,65 @@ footer .footer-bottom {
     text-align: center;
     border-radius: 50px;
     margin-right: 10px; }
-    .product-info .share a.fa-facebook {
+    .share a.fa-facebook, .share a.facebook {
       background: #3b5998; }
-    .product-info .share a.fa-google-plus {
+    .share a.fa-google-plus, .share a.google {
       background: #dd4c3b; }
-    .product-info .share a.fa-twitter {
+    .share a.fa-twitter, .share a.twitter {
       background: #55acee; }
 
 .service-other {
   margin-bottom: 60px; }
-
-.pages ul.pagination {
-  justify-content: center; }
-  .pages ul.pagination li a, .pages ul.pagination li span {
-    display: block;
-    font-size: 1rem;
-    width: 36px;
-    height: 36px;
+  .service-other .service-list .slick-prev, .service-other .service-list .slick-next {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    -webkit-transform: translateY(-50%);
+    -khtml-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
-    line-height: 36px;
-    border: 1px solid transparent; }
-  .pages ul.pagination li.active a, .pages ul.pagination li.active span {
-    border: 1px solid #e6e6e6; }
+    background: rgba(255, 255, 255, 0.3); }
+    .service-other .service-list .slick-prev:before, .service-other .service-list .slick-next:before {
+      content: '';
+      font-size: 1.125rem; }
+    .service-other .service-list .slick-prev:hover, .service-other .service-list .slick-next:hover {
+      background: rgba(255, 255, 255, 0.8); }
+  .service-other .service-list .slick-prev {
+    left: 0; }
+    .service-other .service-list .slick-prev:before {
+      content: '\f104'; }
+  .service-other .service-list .slick-next {
+    right: 0; }
+    .service-other .service-list .slick-next:before {
+      content: '\f105'; }
+  .service-other .service-list .slick-list {
+    margin: 0px -15px; }
+  .service-other .service-list .item {
+    padding: 0px 15px; }
+
+.pages {
+  margin: -30px 0px 30px; }
+  .pages ul.pagination {
+    justify-content: center; }
+    .pages ul.pagination li a, .pages ul.pagination li span {
+      display: block;
+      font-size: 1rem;
+      width: 36px;
+      height: 36px;
+      text-align: center;
+      line-height: 36px;
+      border: 1px solid transparent; }
+    .pages ul.pagination li.active a, .pages ul.pagination li.active span {
+      border: 1px solid #e6e6e6; }
+
+.product-detail-page .pages {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */

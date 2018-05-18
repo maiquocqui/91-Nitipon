@@ -13,34 +13,69 @@ body.modal-open
 	.modal-dialog
 		margin: 100px auto
 		max-width: 1000px
+		+media-breakpoint-down(md)
+			margin: 60px auto
+		+media-breakpoint-down(xs)
+			margin: 0px
 		.modal-content
 			+bor-rad(0)
 			border: none
 			box-shadow: none
-			// .modal-header
-			// 	+bor-rad(0)
-			// 	+pos(rel,null)
-			// 	padding: 0
-			// 	border: none
-			// 	// background: darken($white,3%)
-			// 	background: $orange
-			// 	.modal-title
-			// 		+fs(18rem)
-			// 		font-weight: 700
-			// 		color: $white
-			// 		padding: 10px 20px
-			// 	.close
-			// 		+pos(abs, 10px 15px null null)
-			// 		z-index: 5
-			// 		color: $white
-			// 		text-shadow: none
-			// 		cursor: pointer
-			// 		opacity: 1
-			// 		&:hover
-			// 			opacity: 1
-			// .modal-body
-			// 	background: $white
-			// 	padding: 20px
+		&.modal-order
+			background: url(../img/product/bg.png) center center no-repeat
+			background-size: cover
+			max-width: 650px
+			.modal-content
+				background: none
+				padding: 50px 0
+				.modal-header
+					border: none
+					padding: 0
+					margin: 0
+					.close
+						color: $white
+						text-shadow: none
+						opacity: 1
+						line-height: 1
+						+pos(abs, 30px 30px null null)
+						.lnr
+							line-height: 1
+			.order-form
+				max-width: 450px
+				margin: 0 auto
+				.module-title
+					color: $white
+					+fs(18rem)
+					margin-bottom: 10px
+				.form-group
+					margin-bottom: 10px
+					input, select, textarea
+						@extend .form-control
+						padding: 1rem 1.3rem
+						+bor-rad(0)
+						border: none
+						&:focus
+							border-color: lighten($pink,20%)
+							box-shadow: 0 0 0 0.2rem color-rgba($pink,0.2)
+					select:not([size]):not([multiple])
+						height: calc(4.1rem + 2px)
+				.frm-btn
+					text-align: center
+				input[type="submit"]
+					line-height: 50px
+					text-transform: uppercase
+					+fs(18rem)
+					font-weight: 500
+					color: $pink
+					background: $white
+					padding: 0px 50px
+					border: none
+					display: inline-block
+					width: auto
+					text-transform: capitalize
+					&:focus
+						background: $white
+						color: $pink
 		&.modal-contact
 			background: linear-gradient(#ea3f80 ,#b62560)
 			min-width: 1040px

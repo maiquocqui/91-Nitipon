@@ -329,7 +329,11 @@
 		margin-right: 5px
 .form-group
 	position: relative
-	// .fa.fa-exclamation-triangle
+	.fa.fa-exclamation-triangle
+		color: $red
+		font-family: 'inherit'
+		&:before
+			font-family: 'fontawesome'
 	// 	position: absolute
 	// 	top: 15px
 	// 	right: 15px
@@ -353,25 +357,25 @@
 .hidden
 	display: none
 	
-.share
-	text-align: left
-	clear: both
-	&.sc-right
-		text-align: right
-	.face-like
-		width: auto
-		display: inline-block
-	> div, .face-like, .fb-share-button, .google
-		display: inline-block
-		margin-bottom: 5px
-		margin-right: 5px
-		vertical-align: top
-	.google, .tweet
-		width: 60px
-	.fb-share-button.fb_iframe_widget iframe, iframe.twitter-share-button
-		display: block
-	.google
-		margin-top: -5px
+// .share
+// 	text-align: left
+// 	clear: both
+// 	&.sc-right
+// 		text-align: right
+// 	.face-like
+// 		width: auto
+// 		display: inline-block
+// 	> div, .face-like, .fb-share-button, .google
+// 		display: inline-block
+// 		margin-bottom: 5px
+// 		margin-right: 5px
+// 		vertical-align: top
+// 	.google, .tweet
+// 		width: 60px
+// 	.fb-share-button.fb_iframe_widget iframe, iframe.twitter-share-button
+// 		display: block
+// 	.google
+// 		margin-top: -5px
 
 // **********SEARCH-PAGE**********
 .searchresults 
@@ -570,3 +574,6 @@
 		pointer-events: none
 		&.active
 			pointer-events: all
+
+input[type="reset"]
+	display: none !important

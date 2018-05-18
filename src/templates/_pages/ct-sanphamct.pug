@@ -25,11 +25,37 @@
 						p PK C-Serum: Với công thức vitamin C tự nhiên làm mất tác dụng của các gốc tự do là một trong những nguyên nhân gây lão hoá da. Nitipon PK C Serum kích thích khả năng sản sinh Collagen và Elastin mang lại một làn da khoẻ mạnh hơn và hoàn hảo hơn nhờ quá trình này tác động từ dưới các lớp biểu bì của da. Thành phần Vitamin C trong serum sẽ làm da mềm mịn, sáng hơn và làm mờ đi những vết thâm. Serum thẩm thấu nhanh chóng vào da mà không hề tạo cảm giác nhờn dính.
 						p Hướng dẫn sử dụng: Thoa đều lên toàn bộ vùng mặt buổi sáng và buổi tối trước khi đi ngủ.
 					.product-order
-						a.btn-buy(href="#!") Mua ngay
+						a.btn-buy(href="#!" data-toggle="modal" data-target="#exampleModal") Mua ngay
 						.input-number
 							.btn-spin.btn-dec -
 							input(type="text")
 							.btn-spin.btn-inc +
+					#exampleModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+						.modal-dialog.modal-order(role='document')
+							.modal-content
+								.modal-header
+									.close(data-dismiss='modal', aria-label='Close') <i class="material-icons">close</i>
+								.modal-body
+									.order-form
+										.module-title Bạn đang đặt hàng 
+											strong Kem dưỡng ẩm cho da nhạy cảm Nitipon 15g x1
+										.form-row
+											.form-group.col-12
+												input(type="text" placeholder="Họ tên")
+											.form-group.col-12
+												input(type="text" placeholder="Số điện thoại")
+											.form-group.col-12
+												input(type="text" placeholder="Địa chỉ")
+											.form-group.col-12.col-md-6
+												input(type="text" placeholder="Phường")
+											.form-group.col-12.col-md-6
+												input(type="text" placeholder="Quận")
+											.form-group.col-12
+												input(type="text" placeholder="Email")
+											.form-group.col-12
+												textarea(name="", cols="", rows="3" placeholder="Ghi chú")
+										.frm-btn
+											input(type="submit", value="Mua ngay")
 					.share
 						a.fa.fa-facebook(href="#!")
 						a.fa.fa-google-plus(href="#!")
