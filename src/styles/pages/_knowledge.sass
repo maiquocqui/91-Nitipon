@@ -117,6 +117,20 @@
 							left: 50%
 							right: unset
 							+transform(translate(-50%,0))
+	.row
+		&.text-center
+			justify-content: center
+	#btn-load-more,.btn-load-more
+		display: block
+		text-align: center
+		+fs(20rem)
+		line-height: 50px
+		font-weight: 500
+		padding: 0px 50px
+		color: $white
+		background: $pink
+		margin-top: 40px
+		+bor-rad(0)
 
 .knowledgedetail-page
 	.knowledgedetail-img
@@ -126,3 +140,6 @@
 		margin: 0 auto
 	.share
 		justify-content: center
+
+.pages
+	display: none

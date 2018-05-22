@@ -7951,6 +7951,9 @@ header {
     .home-banner .slick-dots li.slick-active {
       background: #d03370; }
 
+.home-banner img {
+  width: 100%; }
+
 .breadcrumb-wrap {
   padding: 30px 0; }
   .breadcrumb-wrap ol.breadcrumb {
@@ -8442,6 +8445,18 @@ footer .footer-bottom {
       .service-page .service-feature .feature.active .feature-name:after {
         content: '-'; }
 
+.service-order {
+  text-align: center; }
+  .service-order .btn-buy {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 50px;
+    font-weight: 500;
+    padding: 0px 50px;
+    color: #fff;
+    background: #d03370; }
+
 .promotion-register {
   background: #f7f7f7; }
   .promotion-register .register-wrap {
@@ -8655,6 +8670,19 @@ footer .footer-bottom {
         -ms-transform: translate(-50%, 0);
         -o-transform: translate(-50%, 0);
         transform: translate(-50%, 0); }
+  .knowledge-page .row.text-center {
+    justify-content: center; }
+  .knowledge-page #btn-load-more, .knowledge-page .btn-load-more {
+    display: block;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 50px;
+    font-weight: 500;
+    padding: 0px 50px;
+    color: #fff;
+    background: #d03370;
+    margin-top: 40px;
+    border-radius: 0; }
 
 .knowledgedetail-page .knowledgedetail-img {
   margin-bottom: 40px; }
@@ -8665,6 +8693,9 @@ footer .footer-bottom {
 
 .knowledgedetail-page .share {
   justify-content: center; }
+
+.pages {
+  display: none; }
 
 .product-page {
   padding: 30px 0; }
