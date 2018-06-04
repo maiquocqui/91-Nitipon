@@ -11,6 +11,9 @@
 					align-items: center
 					height: 250px
 					overflow: hidden
+					+media-breakpoint-down(xs)
+						border: 1px solid darken($white,10%)
+						height: 140px
 					img
 						max-width: 80%
 						max-height: 80%
@@ -21,6 +24,10 @@
 					.product-name
 						+fs(18rem)
 						color: $pink
+						+media-breakpoint-down(md)
+							+fs(16rem)
+						+media-breakpoint-down(xs)
+							+fs(14rem)
 	
 .product-slide-wrap
 	margin-bottom: 40px
@@ -163,7 +170,21 @@
 			&.active
 				a, span
 					border: 1px solid darken($white,10%)
+.inner-content
+	+media-breakpoint-down(sm)
+		padding: 40px 30px !important
+.thankyou-content
+	img
+	h3
+		+media-breakpoint-down(sm)
+			font-size: 1.5rem !important
+	h4
+		+media-breakpoint-down(sm)
+			font-size: 0.875rem !important
 
 .product-detail-page
+	.pages
+		// display: none
+.hidden-page
 	.pages
 		display: none

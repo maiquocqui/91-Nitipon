@@ -1,0 +1,173 @@
+// LOGIN, SIGNUP, RECOVER PW
+.login-page
+	padding: 40px 0
+.login-panel
+	background: $white 
+	padding: 0 15px
+	// margin-bottom: 40px
+	box-shadow: 0px 3px 30px color-rgba($black,0.1)
+	+bor-rad(0)
+	border: 1px solid darken($white,10%)
+.signup-form, .login-form 
+	width: 100%
+	.headtitle
+		margin-bottom: 10px
+		color: $pink
+		+fs(18rem)
+		line-height: 50px
+		font-weight: 700
+		border-bottom: 1px solid darken($white,10%)
+	.panel-heading
+		margin-bottom: 5px
+		color: darken($white,60%)
+	.form-group
+		margin-bottom: 10px
+		label 
+			+fs(14rem)
+			margin-bottom: 5px
+			line-height: 46px
+		input, select
+			width: 100%
+			+bor-rad(0)
+			font-size: 0.9rem
+			border: 1px solid darken($white,15%)
+			padding: 0px 15px
+			line-height: 46px
+			&:hover, &:active, &:focus
+				border-color: darken($white,30%)
+		select
+			padding: 10px 15px
+		.fa.fa-exclamation
+			top: 42px
+			right: 10px
+	.btnwrap
+		text-align: center
+		padding: 10px 0
+	input[type="submit"]
+		display: block
+		width: 100%
+		line-height: 50px
+		padding: 0px 20px
+		+bor-rad(0px)
+		background: $pink
+		color: $white
+		font-weight: 600 !important
+		+fs(16rem)
+		border: none
+		// text-transform: uppercase
+		&:hover
+			background: $pink
+	.social-login
+		background: darken($white,5%)
+		padding: 10px
+		margin: 0px -15px
+		.des
+			font-weight: 700
+			color: $main
+		.social
+			a 
+				display: inline-block
+				+ a 
+					margin-left: 5px
+				.fa 
+					display: block
+					width: 36px
+					line-height: 36px
+					height: 36px
+					text-align: center
+					color: $white
+					&.fa-facebook
+						background: $facebook
+					&.fa-google-plus
+						background: $google
+					&.fa-yahoo
+						background: $yahoo
+html body .RadInput_Default .riTextBox
+	width: 100% !important
+	+bor-rad(0)
+	border: 1px solid darken($white,15%) !important
+	// padding: 10px 15px !important
+	padding: 0px 15px !important
+	line-height: 40px !important
+	font-size: 0.9rem !important
+
+.login-form 
+	.form-group
+		width: 100%
+		+pos(rel,null)
+		label
+			width: 40px
+			line-height: 46px
+			text-align: center
+			+fs(18rem)
+			color: $bluegrey
+			+pos(abs, 0 null null 0)
+			.fa
+				color: $bluegrey !important
+				&:before
+					line-height: 1
+		input 
+			padding-left: 40px
+		a 
+			color: darken($white,60%)
+			margin-right: 10px
+			&:hover
+				color: $bluegrey
+		&.forget
+			@extend .checkbox
+			label 
+				width: auto
+				line-height: 1.5
+				+fs(13rem)
+				+pos(static,null)
+				color: darken($white,60%)
+				&:hover
+					color: $bluegrey
+
+	input[type="submit"]
+		padding: 0px 20px
+		border: none
+	.btn-login
+		text-align: center
+		background: none
+		&:before
+			display: none
+
+.signup-panel
+	background: $white
+	margin-bottom: 40px
+	.col-xs-12
+		padding: 0 !important
+.signup-form
+	padding: 0px 15px
+	.form-group
+		+flexbox
+		label
+			margin-bottom: 0
+			+fs(14rem)
+			width: 140px
+			line-height: 30px
+		.settingcontrol
+			width: calc(100% - 130px)
+			line-height: 30px
+			input 
+				line-height: 30px
+				padding: 0px 10px
+			select 
+				padding: 6px 10px
+	.gender-select
+		ul 
+			margin-top: 3px
+			li 
+				display: inline-block
+				label
+					line-height: 1.5
+	.checkbox-button
+		label
+			width: auto
+			line-height: 1.5
+	.btnwrap
+		margin-bottom: 15px
+.signupnote
+	height: 100%
+	background: $bluegrey

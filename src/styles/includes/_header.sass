@@ -52,18 +52,20 @@ header
 		+pos(fix, 0 null 0 0)
 		right: 0
 		z-index: 800
-		background: $black
-		opacity: 0.7
+		// background: $black
+		// opacity: 0.7
 	.menu
 		+media-breakpoint-down(lg)
-			+pos(fix, 0 null 0 0)
-			width: 280px
-			background: $white
+			+pos(fix, 60px null 0 0)
+			right: 0
+			background: color-rgba($pink,0.95)
 			z-index: 1000
-			+transition(all,0.5s)
-			+transform(translateX(-100%))
-			&.open
-				+transform(translateX(0))
+			overflow: auto
+			display: none
+			+transition(all,0s)
+			// +transform(translateX(-100%))
+			// &.open
+			// 	+transform(translateX(0))
 		.menu-logo
 			display: none
 			+media-breakpoint-down(lg)
@@ -77,7 +79,7 @@ header
 				+media-breakpoint-down(lg)
 					width: 100%
 					padding: 0px
-					border-bottom: 1px dashed darken($white,10%)
+					border-bottom: 1px dashed color-rgba($white,0.3)
 				> a
 					display: block
 					+fs(17rem)
@@ -86,11 +88,24 @@ header
 					padding: 10px 0px
 					text-transform: capitalize
 					+media-breakpoint-down(lg)
-						color: $main
+						// color: $main
 						padding: 15px 30px
 						+fs(18rem)
 				&.has-sub
 					+pos(rel,null)
+					.btn-showsub
+						display: none
+						color: $white
+						+pos(abs, 12px 0px null null)
+						width: 50px
+						text-align: center
+						+media-breakpoint-down(lg)
+							display: block
+						&:before
+							content: '\f107'
+							+fs(18rem)
+						&.active
+							+transform(scale(1,-1))
 					.sub
 						+pos(abs, 100% null null 0)
 						min-width: 250px
@@ -101,6 +116,10 @@ header
 						z-index: 3
 						background: $white
 						display: none
+						+media-breakpoint-down(lg)
+							+pos(static,null)
+							+bor-rad(0)
+							background: color-rgba($white,0.3)
 						ul
 							li
 								a
@@ -109,16 +128,21 @@ header
 									padding: 10px 20px
 									+fs(16rem)
 									color: darken($white,60%)
+									+media-breakpoint-down(lg)
+										padding: 10px 30px
+										color: $white
 								&:hover
 									a
 										color: $white
 										background: $pink
 				&:hover
-					.sub
-						display: block
+					+media-breakpoint-up(xl)
+						.sub
+							display: block
 				&.active
-					> a
-						border-bottom: 1px solid $white
+					+media-breakpoint-up(xl)
+						> a
+							border-bottom: 1px solid $white
 	.language
 	.search
 		margin-left: 30px
@@ -170,8 +194,8 @@ header
 			font-weight: 500
 			text-transform: capitalize
 			+media-breakpoint-down(lg)
-				background: $pink
-				color: $white
+				// background: $pink
+				// color: $white
 				margin: 15px 30px
 				text-align: center
 

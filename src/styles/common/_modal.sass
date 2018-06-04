@@ -25,9 +25,18 @@ body.modal-open
 			background: url(../img/product/bg.png) center center no-repeat
 			background-size: cover
 			max-width: 650px
+			+media-breakpoint-down(xs)
+				height: 100vh
+				overflow: auto
+				+flexbox
+				justify-content: center
+				align-items: center
+				align-content: center
 			.modal-content
 				background: none
 				padding: 50px 0
+				+media-breakpoint-down(xs)
+					padding: 30px 0
 				.modal-header
 					border: none
 					padding: 0
@@ -38,8 +47,12 @@ body.modal-open
 						opacity: 1
 						line-height: 1
 						+pos(abs, 30px 30px null null)
+						z-index: 10
 						.lnr
 							line-height: 1
+						+media-breakpoint-down(xs)
+							top: 15px
+							right: 15px
 			.order-form
 				max-width: 450px
 				margin: 0 auto
@@ -57,6 +70,8 @@ body.modal-open
 						&:focus
 							border-color: lighten($pink,20%)
 							box-shadow: 0 0 0 0.2rem color-rgba($pink,0.2)
+						+media-breakpoint-down(xs)
+							padding: 0.5rem 1rem
 					select:not([size]):not([multiple])
 						height: calc(4.1rem + 2px)
 				.frm-btn
@@ -73,16 +88,22 @@ body.modal-open
 					display: inline-block
 					width: auto
 					text-transform: capitalize
+					+media-breakpoint-down(xs)
+						line-height: 40px
 					&:focus
 						background: $white
 						color: $pink
 		&.modal-contact
 			background: linear-gradient(#ea3f80 ,#b62560)
-			min-width: 1040px
+			max-width: 1040px
 			.modal-content
 				background: none
 				+pos(rel,null)
 				padding: 80px 150px
+				+media-breakpoint-down(md)
+					padding: 40px 80px
+				+media-breakpoint-down(sm)
+					padding: 40px 40px
 				.modal-header
 					border: none
 					padding: 0
@@ -103,6 +124,12 @@ body.modal-open
 						text-transform: uppercase
 						margin-bottom: 30px
 						+pos(rel,null)
+						+media-breakpoint-down(md)
+							+fs(28rem)
+						+media-breakpoint-down(sm)
+							+fs(24rem)
+						+media-breakpoint-down(xs)
+							+fs(16rem)
 						&:before
 							content: 'i'
 							font-family: 'roboto'
@@ -117,7 +144,11 @@ body.modal-open
 							color: $white
 							+bor-rad(50px)
 							border: 1px solid $white
-							+pos(abs, 10px null null -60px)
+							+pos(abs, 3px null null -60px)
+							+media-breakpoint-down(md)
+							+media-breakpoint-down(sm)
+								left: -45px
+								top: -10px
 					.contact-info
 						ul
 							li
@@ -126,6 +157,8 @@ body.modal-open
 								font-weight: 500
 								color: $white
 								margin-bottom: 10px
+								+media-breakpoint-down(sm)
+									+fs(14rem)
 								.lnr
 									+flexbox
 									justify-content: center
@@ -136,3 +169,9 @@ body.modal-open
 									border: 1px solid $white
 									+pos(abs, 3px null null -60px)
 									+fs(18rem)
+									+media-breakpoint-down(sm)
+										width: 24px
+										height: 24px
+										+fs(14rem)
+										top: -2px
+										left: -40px
