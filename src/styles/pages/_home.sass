@@ -7,6 +7,8 @@
 	border-left: 5px solid $pink
 	padding-left: 10px
 	margin-bottom: 30px
+	+media-breakpoint-down(sm)
+		+fs(24rem)
 .home-section
 	padding: 60px 0
 .home-service
@@ -103,15 +105,21 @@
 	.staff
 		figure
 			+flexbox
+			flex-wrap: wrap
 			.staff-img
 				width: calc(50% - 10px)
 				margin-bottom: 30px
+				+media-breakpoint-down(sm)
+					width: 100%
 				img
 					width: 100%
 			figcaption
 				width: calc(50% - 10px)
 				margin-left: 20px
 				color: $white
+				+media-breakpoint-down(sm)
+					width: 100%
+					margin-left: 0
 				.staff-name
 					+fs(24rem)
 					font-weight: 500
@@ -173,11 +181,13 @@
 .news-list
 	.news-col
 		display: block
-		height: 100%
+		height: calc(100% - 20px)
 		+bor-rad(5px)
 		border: 1px solid darken($white,10%)
 		padding: 5px
 		background: $white
+		+media-breakpoint-down(md)
+			margin-bottom: 20px
 		figure
 			.news-img
 				img

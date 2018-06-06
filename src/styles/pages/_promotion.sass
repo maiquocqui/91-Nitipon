@@ -3,13 +3,19 @@
 	.register-wrap
 		padding: 60px 0
 		+pos(rel,null)
+		+media-breakpoint-down(sm)
+			padding-top: 70px
 		&:before
 			content: ''
 			display: block
 			width: 59px
 			height: 99px
-			background: url(../img/label.png) center center no-repeat
+			background: url(../img/label.png) center top no-repeat
+			background-size: contain
 			+pos(abs, 0 null null 0)
+			+media-breakpoint-down(sm)
+				width: 40px
+				height: 70px
 
 	.module-title
 		+fs(30rem)
@@ -18,6 +24,8 @@
 		color: $pink
 		text-align: center
 		margin-bottom: 20px
+		+media-breakpoint-down(sm)
+			+fs(22rem)
 	.form-wrap
 		max-width: 610px
 		margin: 0 auto
@@ -27,11 +35,15 @@
 			padding: 1.3rem
 			+bor-rad(0)
 			border: 1px solid darken($white,10%)
+			+media-breakpoint-down(sm)
+				padding: 0.5rem 1rem
 			&:focus
 				border-color: lighten($pink,20%)
 				box-shadow: 0 0 0 0.2rem color-rgba($pink,0.2)
 		select:not([size]):not([multiple])
 			height: calc(4.1rem + 2px)
+			+media-breakpoint-down(sm)
+				height: calc(3rem + 2px)
 	.frm-btn
 		text-align: center
 	input[type="submit"]

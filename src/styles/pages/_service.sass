@@ -76,12 +76,19 @@
 				background: #fdf8fb
 				+pos(rel,null)
 				cursor: pointer
+				+media-breakpoint-down(sm)
+					padding: 10px 15px
 				&:after
 					content: '+'
 					+pos(abs, 15px 30px null null)
+					+media-breakpoint-down(sm)
+						top: 10px
+						right: 15px
 			.feature-des
 				display: none
 				padding: 30px
+				+media-breakpoint-down(sm)
+					padding: 15px 0
 				.content
 					+fs(18rem)
 			&:first-child
