@@ -7936,6 +7936,17 @@ header {
     @media (max-width: 1199.98px) {
       header .sitelogo {
         height: 60px; } }
+    @media (max-width: 767.98px) {
+      header .sitelogo {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -khtml-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%); } }
     header .sitelogo a {
       display: block; }
     header .sitelogo img {
@@ -8093,6 +8104,9 @@ header {
   header .search {
     margin-left: 30px;
     position: relative; }
+    @media (max-width: 767.98px) {
+      header .search {
+        margin-left: 15px; } }
     header .search .search-toggle {
       color: #fff;
       font-size: 1.25rem;
