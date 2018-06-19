@@ -1,22 +1,37 @@
 .about-section
-	padding: 30px 0
+	padding: 40px 0
+	+media-breakpoint-down(md)
+		padding: 40px 0
+	+media-breakpoint-down(sm)
+		padding: 30px 0
 	.about-content
 		.btn-viewmore
 			color: $pink
 	.about-store
 		padding: 30px 80px
 		background: #fbf6fa
+		+media-breakpoint-down(sm)
+			padding: 20px 50px
+			margin: 0px -15px
 		.store-title
 			+pos(rel,null)
 			+fs(22rem)
 			font-weight: 500
+			+media-breakpoint-down(sm)
+				+fs(18rem)
 			.lnr
 				+pos(abs, 5px null null -40px)
 				color: $pink
+				+media-breakpoint-down(sm)
+					left: -30px
 		.store-list
 			margin-bottom: 50px
+			+media-breakpoint-down(sm)
+				margin-bottom: 20px
 		.store
 			margin-top: 30px
+			+media-breakpoint-down(sm)
+				margin-top: 15px
 	.about-img
 		margin-bottom: 30px
 	.hidden-content

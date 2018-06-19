@@ -1,7 +1,7 @@
 header
 	background: $pink
 	+media-breakpoint-down(lg)
-		height: 60px
+		height: 50px
 	.container
 		+media-breakpoint-down(lg)
 			max-width: 100%
@@ -19,7 +19,7 @@ header
 		align-items: center
 		height: 100px
 		+media-breakpoint-down(lg)
-			height: 60px
+			height: 50px
 		+media-breakpoint-down(sm)
 			+pos(abs, 0 null null 50%)
 			+transform(translateX(-50%))
@@ -28,7 +28,7 @@ header
 		img
 			height: 70px
 			+media-breakpoint-down(lg)
-				height: 50px
+				height: 40px
 	.col-right
 		+flexbox
 		align-items: center
@@ -43,11 +43,11 @@ header
 			justify-content: center
 			align-items: center
 			align-content: center
-			width: 40px
-			height: 40px
+			width: 30px
+			height: 30px
 			+bor-rad(3px)
 			border: 1px solid color-rgba($white,0.3)
-			+fs(18rem)
+			+fs(16rem)
 			color: $white
 			margin: 10px 15px 10px 0px
 	.overlay
@@ -59,7 +59,7 @@ header
 		// opacity: 0.7
 	.menu
 		+media-breakpoint-down(lg)
-			+pos(fix, 60px null 0 0)
+			+pos(fix, 50px null 0 0)
 			right: 0
 			background: color-rgba($pink,0.95)
 			z-index: 1000
@@ -157,6 +157,8 @@ header
 			+fs(20rem)
 			line-height: 1
 			cursor: pointer
+			+media-breakpoint-down(lg)
+				+fs(16rem)
 			.lnr
 				display: block
 				line-height: 1
@@ -199,9 +201,17 @@ header
 			font-weight: 500
 			text-transform: capitalize
 			+media-breakpoint-down(lg)
-				// background: $pink
-				// color: $white
-				margin: 15px 30px
-				text-align: center
+				+pos(fix, null 20px 20px null)
+				z-index: 100
+				background: $pink
+				color: $white
+				+bor-rad(50px)
+				+fs(15rem)
+				box-shadow: 0px 3px 10px color-rgba($black,0.3)
+				&:after
+					content: '\f05a'
+					margin-left: 5px
+					+fs(18rem)
+					vertical-align: middle
 
 

@@ -5,8 +5,8 @@ $(document).ready(function() {
     });
 
     if ($(window).width() < 1200) {
-        $('header .menu').insertAfter('header .col-right');
-        $('header .contact').insertAfter('.menu .menu-wrap');
+        // $('header .menu').insertAfter('header .col-right');
+        // $('header .contact').insertAfter('.menu .menu-wrap');
     }
 
     $('.btn-showmenu').click(function() {
@@ -14,7 +14,7 @@ $(document).ready(function() {
         // $('.overlay').fadeIn(500);
     });
     $('.overlay').click(function() {
-        $(this).fadeOut(500);
+        // $(this).fadeOut(500);
         $('.menu').removeClass('open');
     });
 
@@ -43,13 +43,13 @@ $(document).ready(function() {
     });
 
     // service slide
-    $('.home-service .service-list , .service-other .service-list').slick({
+    $('.home-service .service-list , .service-other .service-list , .home-news .news-list').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: true,
         dots: false,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 3000,
         responsive: [{
                 breakpoint: 1024,
                 settings: {
@@ -65,7 +65,7 @@ $(document).ready(function() {
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 2
                 }
             }
             // You can unslick at a given breakpoint now by adding:
@@ -83,6 +83,19 @@ $(document).ready(function() {
         autoplay: true,
         autoplaySpeed: 5000,
     });
+
+    // brand slide
+    if ($(window).width() < 768) {
+        $('.home-brand .brand-list .row').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            speed: 1000,
+        });
+    }
 
     // Product slide
     $('.product-slide').slick({
@@ -114,6 +127,19 @@ $(document).ready(function() {
             $(this).parent().find('.feature-des').slideDown(500);
         }
     });
+
+    // btn show service category
+    $('.home-title.clone').text($('.service-cate li.active a').text());
+    $('.btn-showcate').click(function() {
+        $(this).toggleClass('active');
+        $(this).siblings('.service-cate').slideToggle(300);
+    });
+
+    // mobile product detail name
+    if ($(window).width() < 992) {
+        $('.product-page .home-title').text($('.product-info .product-name').text());
+    }
+
 
     // About viewmore
     $('.about-section .btn-viewmore').click(function() {

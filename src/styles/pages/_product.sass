@@ -31,8 +31,14 @@
 	
 .product-slide-wrap
 	margin-bottom: 40px
+	+media-breakpoint-down(md)
+		margin-bottom: 30px
+	+media-breakpoint-down(sm)
+		margin-bottom: 15px
 	.product-slide
 		margin-bottom: 20px
+		+media-breakpoint-down(sm)
+			margin-bottom: 0
 		.item
 			.img
 				+flexbox
@@ -40,6 +46,11 @@
 				justify-content: center
 				align-items: center
 				align-content: center
+				+media-breakpoint-down(sm)
+					height: 300px
+				img
+					max-width: 90%
+					max-height: 90%
 	.product-nav
 		.slick-track
 			margin: 0
@@ -53,6 +64,8 @@
 				+flexbox
 				justify-content: center
 				align-items: center
+				+media-breakpoint-down(md)
+					height: 70px
 				img
 					max-width: 70%
 					max-height: 70%
@@ -61,18 +74,34 @@
 					border: 1px solid $pink
 .product-info
 	margin-bottom: 40px
+	+media-breakpoint-down(md)
+		margin-bottom: 30px
+	+media-breakpoint-down(sm)
+		margin-bottom: 15px
 	.product-name
 		+fs(30rem)
 		font-weight: 700
 		margin-bottom: 20px
+		+media-breakpoint-down(md)
+			display: none
 	.product-overview
 		+fs(18rem)
 		margin-bottom: 40px
+		+media-breakpoint-down(md)
+			+fs(16rem)
+			margin-bottom: 30px
+		+media-breakpoint-down(sm)
+			+fs(14rem)
+			margin-bottom: 15px
 	.product-order
 		+flexbox
 		align-items: center
 		align-content: center
 		margin-bottom: 40px
+		+media-breakpoint-down(sm)
+			flex-wrap: wrap
+			justify-content: center
+			margin-bottom: 15px
 		.btn-buy
 			display: block
 			background: $pink
@@ -82,12 +111,20 @@
 			margin-right: 30px
 			+media-breakpoint-down(sm)
 				padding: 0px 30px
+				order: 2
+				width: 100%
+				text-align: center
+				font-weight: 600
+				margin-right: 0
+				margin-top: 10px
 		.input-number
 			border: none
 			width: auto
 			+flexbox
 			align-items: center
 			align-content: center
+			+media-breakpoint-down(sm)
+				order: 1
 			&:after
 				display: none
 			.btn-spin
@@ -106,6 +143,8 @@
 .share
 	+flexbox
 	align-items: center
+	+media-breakpoint-down(sm)
+		justify-content: center
 	a
 		display: block
 		width: 40px !important
@@ -116,12 +155,16 @@
 		text-align: center
 		+bor-rad(50px)
 		margin-right: 10px
+		+media-breakpoint-down(sm)
+			&:last-child
+				margin-right: 0
 		&.fa-facebook, &.facebook
 			background: $facebook
 		&.fa-google-plus, &.google
 			background: $google
 		&.fa-twitter, &.twitter
 			background: $twitter
+			
 
 .service-other
 	margin-bottom: 60px

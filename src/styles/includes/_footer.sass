@@ -4,6 +4,8 @@ footer
 		padding: 50px 0
 		+media-breakpoint-down(md)
 			padding: 40px 0
+		+media-breakpoint-down(sm)
+			padding: 30px 0 0
 		.sitelogo
 			+flexbox
 			justify-content: center
@@ -13,12 +15,18 @@ footer
 				width: 100%
 				img
 					height: 80px
+			+media-breakpoint-down(sm)
+				margin-bottom: 20px
+				img
+					height: 60px
 		.contact-info
 			+fs(18rem)
 			font-weight: 500
 			color: $white
 			+media-breakpoint-down(md)
 				text-align: center
+			+media-breakpoint-down(sm)
+				+fs(14rem)
 			li
 				margin-bottom: 5px
 			a
@@ -33,6 +41,8 @@ footer
 				+fs(20rem)
 				color: $white
 				font-weight: 500
+				+media-breakpoint-down(sm)
+					+fs(16rem)
 			.hashtag
 				margin-bottom: 15px
 				a
@@ -40,6 +50,8 @@ footer
 					+fs(20rem)
 					font-weight: 500
 					margin-right: 10px
+					+media-breakpoint-down(sm)
+						+fs(16rem)
 					&:before
 						content: '#'
 			.footer-staff
@@ -54,6 +66,10 @@ footer
 						margin-right: 0
 						+ a
 							margin-left: 20px
+							+media-breakpoint-down(sm)
+								margin-left: 0
+					+media-breakpoint-down(sm)
+						padding: 0px 5px
 					img
 						width: 120px
 			.social
@@ -86,6 +102,8 @@ footer
 			color: darken($white,60%)
 			+media-breakpoint-down(md)
 				width: 100%
+			+media-breakpoint-down(sm)
+				+fs(14rem)
 		.Module
 			+media-breakpoint-down(md)
 				width: 100%
@@ -95,6 +113,8 @@ footer
 			a
 				color: darken($white,60%)
 				+fs(16rem)
+				+media-breakpoint-down(sm)
+					+fs(14rem)
 				+ a
 					margin-left: 30px
 				&:hover
