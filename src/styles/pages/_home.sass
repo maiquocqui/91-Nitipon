@@ -80,7 +80,7 @@
 						+fs(14rem)
 .home-staff
 	@extend .home-section
-	background: $pink
+	background: $maingradient
 	.home-title
 		color: $white
 		border-left-color: $white
@@ -204,7 +204,7 @@
 		line-height: 50px
 		font-weight: 500
 		color: $white
-		background: $pink
+		background: $maingradient
 		width: 100%
 		margin-top: 20px
 .home-brand
@@ -218,7 +218,7 @@
 		line-height: 50px
 		font-weight: 500
 		color: $white
-		background: $pink
+		background: $maingradient
 		margin-top: -70px
 .brand-list
 	.row
@@ -273,8 +273,13 @@
 			margin: 0px -15px
 			+media-breakpoint-down(sm)
 				margin: 0px -10px
+		.slick-track
+			+flexbox
+		.news-col
+			height: 100%
 		.item
 			padding: 0px 15px
+			height: auto
 			+media-breakpoint-down(sm)
 				padding: 0px 10px
 .news-list

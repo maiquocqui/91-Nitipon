@@ -1,7 +1,7 @@
 .promotion-register
 	background: darken($white,3%)
 	.register-wrap
-		padding: 60px 0
+		padding: 40px 0
 		+pos(rel,null)
 		+media-breakpoint-down(sm)
 			padding-top: 70px
@@ -18,21 +18,21 @@
 				height: 70px
 
 	.module-title
-		+fs(30rem)
+		+fs(28rem)
 		text-transform: uppercase
 		font-weight: 700
 		color: $pink
 		text-align: center
 		margin-bottom: 20px
 		+media-breakpoint-down(sm)
-			+fs(22rem)
+			+fs(20rem)
 	.form-wrap
-		max-width: 610px
+		max-width: 600px
 		margin: 0 auto
 	.form-group
 		input, select
 			@extend .form-control
-			padding: 1.3rem
+			padding: 1rem 1.3rem
 			+bor-rad(0)
 			border: 1px solid darken($white,10%)
 			+media-breakpoint-down(sm)
@@ -41,7 +41,7 @@
 				border-color: lighten($pink,20%)
 				box-shadow: 0 0 0 0.2rem color-rgba($pink,0.2)
 		select:not([size]):not([multiple])
-			height: calc(4.1rem + 2px)
+			height: calc(3.5rem + 2px)
 			+media-breakpoint-down(sm)
 				height: calc(3rem + 2px)
 	.frm-btn
@@ -51,14 +51,14 @@
 		+fs(18rem)
 		font-weight: 500
 		color: $white
-		background: $pink
+		background: $maingradient
 		padding: 0px 50px
 		border: none
 		display: inline-block
 		width: auto
 		text-transform: capitalize
 		&:focus
-			background: $pink
+			background: $maingradient
 			color: $white
 .promotion-page
 	padding: 40px 0
